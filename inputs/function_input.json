@@ -1,0 +1,22 @@
+{
+  "GetActorFullName": {
+    "sql_function_query": "SELECT dbo.GetActorFullName(5) AS FullName;",
+    "sf_function_query": "SELECT MY_DB.MY_SCHEMA.GET_ACTOR_FULL_NAME(5);"
+  },
+  "GetTotalRentalByCustomer": {
+    "sql_function_query": "SELECT dbo.GetTotalRentalByCustomer(3) AS TotalSpent;",
+    "sf_function_query": "SELECT MY_DB.MY_SCHEMA.GET_TOTAL_RENTAL_BY_CUSTOMER(3);"
+  },
+  "GetFilmsByCategory": {
+    "sql_function_query": "SELECT * FROM dbo.GetFilmsByCategory('Action');",
+    "sf_function_query": "SELECT * FROM TABLE(MY_DB.MY_SCHEMA.GET_FILMS_BY_CATEGORY('Action'));"
+  },
+  "IsFilmAvailableInStore": {
+    "sql_function_query": "SELECT dbo.IsFilmAvailableInStore(10, 1) AS IsAvailable;",
+    "sf_function_query": "SELECT MY_DB.MY_SCHEMA.IS_FILM_AVAILABLE_IN_STORE(10, 1);"
+  },
+  "GetTopCustomersByRentals": {
+    "sql_function_query": "SELECT * FROM dbo.GetTopCustomersByRentals();",
+    "sf_function_query": "SELECT * FROM TABLE(MY_DB.MY_SCHEMA.GET_TOP_CUSTOMERS_BY_RENTALS());"
+  }
+}

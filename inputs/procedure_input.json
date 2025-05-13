@@ -1,0 +1,23 @@
+{
+"GetCustomerRentals":
+    {"sf_procedure_query":"CALL GetCustomerRentals(5)",
+"sql_procedure_query":"EXEC dbo.GetCustomerRentals @customer_id = 5"},
+
+"GetInactiveCustomers":
+    {"sf_procedure_query":"CALL GetInactiveCustomers()",
+"sql_procedure_query":"EXEC dbo.GetInactiveCustomers"},
+
+"GetStoreRevenue":
+    {"sf_procedure_query":"CALL GetStoreRevenue(1)", 
+"sql_procedure_query":"EXEC dbo.GetStoreRevenue @store_id = 1"},
+
+"GetTopRentedMovies":
+    {"sf_procedure_query":"CALL GetTopRentedMovies()",
+"sql_procedure_query":"EXEC dbo.GetTopRentedMovies"},
+
+"AddRental":
+    {"sf_procedure_query":"CALL AddRental(3, 25, 2)",
+"sql_procedure_query":"EXEC dbo.AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2"}
+}
+
+

@@ -1,0 +1,183 @@
+
+        <html>
+        <head>
+            <title>Comparison Report</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 20px;
+                }
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin-bottom: 20px;
+                }
+                th, td {
+                    border: 1px solid black;
+                    padding: 8px;
+                    text-align: left;
+                }
+                th {
+                    background-color: #4CAF50;
+                    color: white;
+                }
+                .mismatch {
+                    background-color: #ffcccc;
+                }
+                .entity-header {
+                    font-size: 18px;
+                    font-weight: bold;
+                    background-color: #ddd;
+                    padding: 10px;
+                    margin-top: 20px;
+                    border: 1px solid black;
+                    text-align: center;
+                }
+            </style>
+        </head>
+        <body>
+            <h2>Comparison Report</h2>
+        <div class="entity-header">GetCustomerRentals</div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Attribute</th>
+      <th>Snowflake Output</th>
+      <th>SQL Server Output</th>
+      <th>Comparison</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of Rows</td>
+      <td>38</td>
+      <td>0</td>
+      <td>Different</td>
+    </tr>
+    <tr>
+      <td>Column Names</td>
+      <td>rental_id, film_title, return_date, rental_date</td>
+      <td>rental_id, film_title, return_date, rental_date</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Data Types</td>
+      <td>rental_id: object, film_title: object, return_date: object, rental_date: object</td>
+      <td>rental_id: object, film_title: object, return_date: object, rental_date: object</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Data Comparison</td>
+      <td>38</td>
+      <td>38</td>
+      <td>Data mismatch detected</td>
+    </tr>
+  </tbody>
+</table><div class="entity-header">GetInactiveCustomers</div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Attribute</th>
+      <th>Snowflake Output</th>
+      <th>SQL Server Output</th>
+      <th>Comparison</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of Rows</td>
+      <td>632</td>
+      <td>599</td>
+      <td>Different</td>
+    </tr>
+    <tr>
+      <td>Column Names</td>
+      <td>last_name, first_name, customer_id, last_rental_date</td>
+      <td>last_name, first_name, customer_id, last_rental_date</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Data Types</td>
+      <td>last_name: object, first_name: object, customer_id: object, last_rental_date: object</td>
+      <td>last_name: object, first_name: object, customer_id: int64, last_rental_date: datetime64[ns]</td>
+      <td>Different</td>
+    </tr>
+    <tr>
+      <td>Data Comparison</td>
+      <td>33</td>
+      <td>33</td>
+      <td>Data mismatch detected</td>
+    </tr>
+  </tbody>
+</table><div class="entity-header">GetStoreRevenue</div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Attribute</th>
+      <th>Snowflake Output</th>
+      <th>SQL Server Output</th>
+      <th>Comparison</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of Rows</td>
+      <td>1</td>
+      <td>0</td>
+      <td>Different</td>
+    </tr>
+    <tr>
+      <td>Column Names</td>
+      <td>total_revenue, store_id</td>
+      <td>total_revenue, store_id</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Data Types</td>
+      <td>total_revenue: float64, store_id: object</td>
+      <td>total_revenue: object, store_id: object</td>
+      <td>Different</td>
+    </tr>
+    <tr>
+      <td>Data Comparison</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Data mismatch detected</td>
+    </tr>
+  </tbody>
+</table><div class="entity-header">GetTopRentedMovies</div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Attribute</th>
+      <th>Snowflake Output</th>
+      <th>SQL Server Output</th>
+      <th>Comparison</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of Rows</td>
+      <td>10</td>
+      <td>0</td>
+      <td>Different</td>
+    </tr>
+    <tr>
+      <td>Column Names</td>
+      <td>title, total_rentals, film_id</td>
+      <td>title, total_rentals, film_id</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Data Types</td>
+      <td>title: object, total_rentals: int64, film_id: object</td>
+      <td>title: object, total_rentals: object, film_id: object</td>
+      <td>Different</td>
+    </tr>
+    <tr>
+      <td>Data Comparison</td>
+      <td>10</td>
+      <td>10</td>
+      <td>Data mismatch detected</td>
+    </tr>
+  </tbody>
+</table>
+        </body>
+        </html>
+        

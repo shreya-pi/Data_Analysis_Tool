@@ -1,0 +1,986 @@
+2025-05-13 12:30:46,590 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 12:30:46,591 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 12:38:03,030 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 12:38:03,030 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 12:38:10,353 - INFO - The results match perfectly!
+2025-05-13 12:38:10,353 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_CATEGORY | dbo.category | Different
+2025-05-13 12:38:10,353 - INFO - Number of Rows: 16 | 16 | Same
+2025-05-13 12:38:10,353 - INFO - Column Names: last_update, name, category_id | last_update, name, category_id | Same
+2025-05-13 12:38:10,356 - INFO - Data Types: category_id: object, name: object, last_update: object | category_id: object, last_update: datetime64[ns], name: object | Different
+2025-05-13 12:38:10,356 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-05-13 12:39:30,606 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 12:39:30,608 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 12:39:38,819 - INFO - The results match perfectly!
+2025-05-13 12:39:38,820 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_FILM_CATEGORY | dbo.film_category | Different
+2025-05-13 12:39:38,822 - INFO - Number of Rows: 1000 | 1000 | Same
+2025-05-13 12:39:38,822 - INFO - Column Names: category_id, last_update, film_id | category_id, last_update, film_id | Same
+2025-05-13 12:39:38,822 - INFO - Data Types: film_id: object, category_id: object, last_update: object | category_id: object, film_id: int64, last_update: datetime64[ns] | Different
+2025-05-13 12:39:38,822 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-05-13 12:40:29,714 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 12:40:29,714 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 12:40:36,385 - ERROR - The results do not match!
+2025-05-13 12:41:05,260 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 12:41:05,261 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 12:41:12,930 - ERROR - The results do not match!
+2025-05-13 12:41:12,958 - INFO - Number of differences detected: 1000
+2025-05-13 12:41:12,958 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_FILM | dbo.film | Different
+2025-05-13 12:41:12,958 - INFO - Number of Rows: 1000 | 0 | Different
+2025-05-13 12:41:12,958 - INFO - Column Names: description, last_update, title, film_id, release_year, language_id, rental_duration, rental_rate, rating, special_features, length, original_language_id, replacement_cost | description, last_update, film_id, title, release_year, language_id, rating, rental_duration, rental_rate, special_features, length, original_language_id, replacement_cost | Same
+2025-05-13 12:41:12,958 - INFO - Data Types: film_id: object, title: object, description: object, release_year: object, language_id: object, original_language_id: object, rental_duration: object, rental_rate: object, length: object, replacement_cost: object, rating: object, special_features: object, last_update: object | description: object, film_id: object, language_id: object, last_update: object, length: object, original_language_id: object, rating: object, release_year: object, rental_duration: object, rental_rate: object, replacement_cost: object, special_features: object, title: object | Same
+2025-05-13 12:41:12,958 - INFO - Data Comparison: 1000 | 1000 | Data mismatch detected
+2025-05-13 12:41:12,961 - INFO - HTML report generated: Dq_analysis/Table_comparison_report.html
+2025-05-13 12:52:31,453 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 12:52:31,453 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 12:52:34,401 - INFO - The results match perfectly!
+2025-05-13 12:52:34,401 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_FILM_ACTOR | dbo.film_actor | Different
+2025-05-13 12:52:34,401 - INFO - Number of Rows: 5462 | 5462 | Same
+2025-05-13 12:52:34,401 - INFO - Column Names: film_id, actor_id, last_update | film_id, actor_id, last_update | Same
+2025-05-13 12:52:34,401 - INFO - Data Types: actor_id: object, film_id: object, last_update: object | actor_id: int64, film_id: int64, last_update: datetime64[ns] | Different
+2025-05-13 12:52:34,401 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-05-13 12:52:34,403 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:52:34,589 - ERROR - The results do not match!
+2025-05-13 12:52:34,597 - INFO - Number of differences detected: 6
+2025-05-13 12:52:34,597 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_SALES_BY_STORE | dbo.sales_by_store | Different
+2025-05-13 12:52:34,597 - INFO - Number of Rows: 2 | 4 | Different
+2025-05-13 12:52:34,597 - INFO - Column Names: manager, store, total_sales | store, manager, total_sales | Same
+2025-05-13 12:52:34,597 - INFO - Data Types: store: object, manager: object, total_sales: object | manager: object, store: object, total_sales: object | Same
+2025-05-13 12:52:34,597 - INFO - Data Comparison: 6 | 6 | Data mismatch detected
+2025-05-13 12:52:34,600 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:52:34,791 - INFO - The results match perfectly!
+2025-05-13 12:52:34,791 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_CATEGORY | dbo.category | Different
+2025-05-13 12:52:34,791 - INFO - Number of Rows: 16 | 16 | Same
+2025-05-13 12:52:34,791 - INFO - Column Names: category_id, name, last_update | category_id, name, last_update | Same
+2025-05-13 12:52:34,791 - INFO - Data Types: category_id: object, name: object, last_update: object | category_id: object, last_update: datetime64[ns], name: object | Different
+2025-05-13 12:52:34,791 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-05-13 12:52:34,794 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:52:35,027 - ERROR - The results do not match!
+2025-05-13 12:52:35,038 - INFO - Number of differences detected: 603
+2025-05-13 12:52:35,039 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_ADDRESS | dbo.address | Different
+2025-05-13 12:52:35,039 - INFO - Number of Rows: 603 | 0 | Different
+2025-05-13 12:52:35,039 - INFO - Column Names: district, address, phone, address2, address_id, location, last_update, postal_code, city_id | district, address, phone, address2, address_id, location, last_update, postal_code, city_id | Same
+2025-05-13 12:52:35,039 - INFO - Data Types: address_id: object, address: object, address2: object, district: object, city_id: object, postal_code: object, phone: object, location: object, last_update: object | address: object, address2: object, address_id: object, city_id: object, district: object, last_update: object, location: object, phone: object, postal_code: object | Same
+2025-05-13 12:52:35,039 - INFO - Data Comparison: 603 | 603 | Data mismatch detected
+2025-05-13 12:52:35,042 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:52:35,320 - ERROR - The results do not match!
+2025-05-13 12:52:35,337 - INFO - Number of differences detected: 1997
+2025-05-13 12:52:35,337 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_FILM_LIST | dbo.film_list | Different
+2025-05-13 12:52:35,337 - INFO - Number of Rows: 1000 | 997 | Different
+2025-05-13 12:52:35,337 - INFO - Column Names: category, description, price, title, length, rating, fid, actors | category, description, price, title, length, rating, fid, actors | Same
+2025-05-13 12:52:35,337 - INFO - Data Types: fid: object, title: object, description: object, category: object, price: object, length: object, rating: object, actors: object | actors: object, category: object, description: object, fid: int64, length: int64, price: object, rating: object, title: object | Different
+2025-05-13 12:52:35,338 - INFO - Data Comparison: 1997 | 1997 | Data mismatch detected
+2025-05-13 12:52:35,342 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:52:35,948 - ERROR - The results do not match!
+2025-05-13 12:52:36,004 - INFO - Number of differences detected: 366
+2025-05-13 12:52:36,004 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_RENTAL | dbo.rental | Different
+2025-05-13 12:52:36,004 - INFO - Number of Rows: 16044 | 16044 | Same
+2025-05-13 12:52:36,004 - INFO - Column Names: customer_id, rental_id, staff_id, last_update, return_date, inventory_id, rental_date | customer_id, last_update, rental_id, staff_id, return_date, inventory_id, rental_date | Same
+2025-05-13 12:52:36,005 - INFO - Data Types: rental_id: object, rental_date: object, inventory_id: object, customer_id: object, return_date: object, staff_id: object, last_update: object | customer_id: int64, inventory_id: object, last_update: datetime64[ns], rental_date: datetime64[ns], rental_id: int64, return_date: datetime64[ns], staff_id: object | Different
+2025-05-13 12:52:36,005 - INFO - Data Comparison: 366 | 366 | Data mismatch detected
+2025-05-13 12:52:36,011 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:52:36,270 - ERROR - The results do not match!
+2025-05-13 12:52:36,283 - INFO - Number of differences detected: 1000
+2025-05-13 12:52:36,283 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_FILM | dbo.film | Different
+2025-05-13 12:52:36,283 - INFO - Number of Rows: 1000 | 0 | Different
+2025-05-13 12:52:36,283 - INFO - Column Names: replacement_cost, rental_rate, film_id, original_language_id, rental_duration, special_features, description, title, length, rating, last_update, language_id, release_year | replacement_cost, rental_rate, film_id, rental_duration, special_features, description, title, length, rating, last_update, language_id, release_year, original_language_id | Same
+2025-05-13 12:52:36,283 - INFO - Data Types: film_id: object, title: object, description: object, release_year: object, language_id: object, original_language_id: object, rental_duration: object, rental_rate: object, length: object, replacement_cost: object, rating: object, special_features: object, last_update: object | description: object, film_id: object, language_id: object, last_update: object, length: object, original_language_id: object, rating: object, release_year: object, rental_duration: object, rental_rate: object, replacement_cost: object, special_features: object, title: object | Same
+2025-05-13 12:52:36,283 - INFO - Data Comparison: 1000 | 1000 | Data mismatch detected
+2025-05-13 12:52:36,290 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:52:36,532 - INFO - The results match perfectly!
+2025-05-13 12:52:36,532 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_INVENTORY | dbo.inventory | Different
+2025-05-13 12:52:36,532 - INFO - Number of Rows: 4581 | 4581 | Same
+2025-05-13 12:52:36,532 - INFO - Column Names: film_id, inventory_id, last_update, store_id | film_id, last_update, inventory_id, store_id | Same
+2025-05-13 12:52:36,532 - INFO - Data Types: inventory_id: object, film_id: object, store_id: object, last_update: object | film_id: int64, inventory_id: object, last_update: datetime64[ns], store_id: object | Different
+2025-05-13 12:52:36,532 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-05-13 12:52:36,538 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:52:36,785 - INFO - The results match perfectly!
+2025-05-13 12:52:36,785 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_FILM_TEXT | dbo.film_text | Different
+2025-05-13 12:52:36,785 - INFO - Number of Rows: 1000 | 1000 | Same
+2025-05-13 12:52:36,785 - INFO - Column Names: description, film_id, title | description, film_id, title | Same
+2025-05-13 12:52:36,785 - INFO - Data Types: film_id: object, title: object, description: object | description: object, film_id: int64, title: object | Different
+2025-05-13 12:52:36,785 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-05-13 12:52:36,791 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:52:37,707 - ERROR - The results do not match!
+2025-05-13 12:52:37,847 - INFO - Number of differences detected: 32121
+2025-05-13 12:52:37,847 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_PAYMENT | dbo.payment | Different
+2025-05-13 12:52:37,847 - INFO - Number of Rows: 16077 | 16044 | Different
+2025-05-13 12:52:37,847 - INFO - Column Names: customer_id, amount, staff_id, rental_id, payment_date, payment_id, last_update | customer_id, amount, last_update, payment_date, rental_id, payment_id, staff_id | Same
+2025-05-13 12:52:37,847 - INFO - Data Types: payment_id: object, customer_id: object, staff_id: object, rental_id: object, amount: object, payment_date: object, last_update: object | amount: object, customer_id: int64, last_update: datetime64[ns], payment_date: datetime64[ns], payment_id: int64, rental_id: int64, staff_id: object | Different
+2025-05-13 12:52:37,847 - INFO - Data Comparison: 32121 | 32121 | Data mismatch detected
+2025-05-13 12:52:37,854 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:52:38,055 - ERROR - The results do not match!
+2025-05-13 12:52:38,061 - INFO - Number of differences detected: 2
+2025-05-13 12:52:38,061 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_CITY | dbo.city | Different
+2025-05-13 12:52:38,061 - INFO - Number of Rows: 600 | 600 | Same
+2025-05-13 12:52:38,061 - INFO - Column Names: country_id, city_id, last_update, city | country_id, city_id, last_update, city | Same
+2025-05-13 12:52:38,061 - INFO - Data Types: city_id: object, city: object, country_id: object, last_update: object | city: object, city_id: int64, country_id: int64, last_update: datetime64[ns] | Different
+2025-05-13 12:52:38,061 - INFO - Data Comparison: 2 | 2 | Data mismatch detected
+2025-05-13 12:52:38,069 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:52:38,258 - INFO - The results match perfectly!
+2025-05-13 12:52:38,258 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_LANGUAGE | dbo.language | Different
+2025-05-13 12:52:38,258 - INFO - Number of Rows: 6 | 6 | Same
+2025-05-13 12:52:38,258 - INFO - Column Names: name, last_update, language_id | name, last_update, language_id | Same
+2025-05-13 12:52:38,258 - INFO - Data Types: language_id: object, name: object, last_update: object | language_id: object, last_update: datetime64[ns], name: object | Different
+2025-05-13 12:52:38,258 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-05-13 12:52:38,265 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:52:38,511 - ERROR - The results do not match!
+2025-05-13 12:52:38,533 - INFO - Number of differences detected: 1997
+2025-05-13 12:52:38,533 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_NICER_BUT_SLOWER_FILM_LIST | dbo.nicer_but_slower_film_list | Different
+2025-05-13 12:52:38,533 - INFO - Number of Rows: 1000 | 997 | Different
+2025-05-13 12:52:38,533 - INFO - Column Names: category, description, price, title, length, rating, fid, actors | category, description, price, title, length, rating, fid, actors | Same
+2025-05-13 12:52:38,533 - INFO - Data Types: fid: object, title: object, description: object, category: object, price: object, length: object, rating: object, actors: object | actors: object, category: object, description: object, fid: int64, length: int64, price: object, rating: object, title: object | Different
+2025-05-13 12:52:38,533 - INFO - Data Comparison: 1997 | 1997 | Data mismatch detected
+2025-05-13 12:52:38,542 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:52:38,724 - ERROR - The results do not match!
+2025-05-13 12:52:38,729 - INFO - Number of differences detected: 32
+2025-05-13 12:52:38,729 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_SALES_BY_FILM_CATEGORY | dbo.sales_by_film_category | Different
+2025-05-13 12:52:38,729 - INFO - Number of Rows: 16 | 16 | Same
+2025-05-13 12:52:38,729 - INFO - Column Names: category, total_sales | category, total_sales | Same
+2025-05-13 12:52:38,729 - INFO - Data Types: category: object, total_sales: object | category: object, total_sales: object | Same
+2025-05-13 12:52:38,729 - INFO - Data Comparison: 32 | 32 | Data mismatch detected
+2025-05-13 12:52:38,739 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:52:38,989 - ERROR - The results do not match!
+2025-05-13 12:52:38,994 - INFO - Number of differences detected: 60
+2025-05-13 12:52:38,994 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_ACTOR_INFO | dbo.actor_info | Different
+2025-05-13 12:52:38,994 - INFO - Number of Rows: 260 | 200 | Different
+2025-05-13 12:52:38,994 - INFO - Column Names: last_name, actor_id, film_info, first_name | last_name, actor_id, film_info, first_name | Same
+2025-05-13 12:52:38,994 - INFO - Data Types: actor_id: object, first_name: object, last_name: object, film_info: object | actor_id: int64, film_info: object, first_name: object, last_name: object | Different
+2025-05-13 12:52:38,994 - INFO - Data Comparison: 60 | 60 | Data mismatch detected
+2025-05-13 12:52:39,003 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:52:39,207 - ERROR - The results do not match!
+2025-05-13 12:52:39,215 - INFO - Number of differences detected: 33
+2025-05-13 12:52:39,215 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_CUSTOMER | dbo.customer | Different
+2025-05-13 12:52:39,215 - INFO - Number of Rows: 632 | 599 | Different
+2025-05-13 12:52:39,215 - INFO - Column Names: active, first_name, email, customer_id, address_id, last_update, store_id, last_name, create_date | active, address, registration_date, phone_number, email, first_name, customer_id, customer_name, id, address_id, last_update, store_id, last_name, name, create_date | Different
+2025-05-13 12:52:39,216 - INFO - Data Types: customer_id: object, store_id: object, first_name: object, last_name: object, email: object, address_id: object, active: object, create_date: object, last_update: object | address: object, customer_id: int64, customer_name: object, email: object, phone_number: object, registration_date: object, active: object, address_id: int64, create_date: datetime64[ns], first_name: object, last_name: object, last_update: datetime64[ns], store_id: object, id: object, name: object | Different
+2025-05-13 12:52:39,216 - INFO - Data Comparison: 33 | 33 | Data mismatch detected
+2025-05-13 12:52:39,226 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:52:39,470 - ERROR - The results do not match!
+2025-05-13 12:52:39,483 - INFO - Number of differences detected: 1
+2025-05-13 12:52:39,483 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_STAFF | dbo.staff | Different
+2025-05-13 12:52:39,483 - INFO - Number of Rows: 2 | 1 | Different
+2025-05-13 12:52:39,483 - INFO - Column Names: active, first_name, picture, email, username, address_id, password, staff_id, last_update, store_id, last_name | active, first_name, picture, email, username, address_id, password, last_update, staff_id, store_id, last_name | Same
+2025-05-13 12:52:39,483 - INFO - Data Types: staff_id: object, first_name: object, last_name: object, address_id: object, picture: object, email: object, store_id: object, active: object, username: object, password: object, last_update: object | active: object, address_id: int64, email: object, first_name: object, last_name: object, last_update: datetime64[ns], password: object, picture: object, staff_id: object, store_id: object, username: object | Different
+2025-05-13 12:52:39,483 - INFO - Data Comparison: 1 | 1 | Data mismatch detected
+2025-05-13 12:52:39,493 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:52:39,677 - INFO - The results match perfectly!
+2025-05-13 12:52:39,678 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_STORE | dbo.store | Different
+2025-05-13 12:52:39,678 - INFO - Number of Rows: 2 | 2 | Same
+2025-05-13 12:52:39,678 - INFO - Column Names: address_id, last_update, manager_staff_id, store_id | address_id, last_update, manager_staff_id, store_id | Same
+2025-05-13 12:52:39,678 - INFO - Data Types: store_id: object, manager_staff_id: object, address_id: object, last_update: object | address_id: int64, last_update: datetime64[ns], manager_staff_id: object, store_id: object | Different
+2025-05-13 12:52:39,678 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-05-13 12:52:39,688 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:52:39,863 - INFO - The results match perfectly!
+2025-05-13 12:52:39,863 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_FILM_CATEGORY | dbo.film_category | Different
+2025-05-13 12:52:39,863 - INFO - Number of Rows: 1000 | 1000 | Same
+2025-05-13 12:52:39,863 - INFO - Column Names: category_id, film_id, last_update | category_id, film_id, last_update | Same
+2025-05-13 12:52:39,863 - INFO - Data Types: film_id: object, category_id: object, last_update: object | category_id: object, film_id: int64, last_update: datetime64[ns] | Different
+2025-05-13 12:52:39,863 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-05-13 12:52:39,876 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:59:04,858 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 12:59:04,858 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 12:59:06,828 - ERROR - The results do not match!
+2025-05-13 12:59:06,836 - INFO - Number of differences detected: 33
+2025-05-13 12:59:06,836 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_CUSTOMER | dbo.customer | Different
+2025-05-13 12:59:06,836 - INFO - Number of Rows: 632 | 599 | Different
+2025-05-13 12:59:06,836 - INFO - Column Names: first_name, active, address_id, last_name, create_date, customer_id, last_update, store_id, email | first_name, name, active, address_id, last_name, create_date, registration_date, address, customer_name, id, customer_id, last_update, store_id, phone_number, email | Different
+2025-05-13 12:59:06,836 - INFO - Data Types: customer_id: object, store_id: object, first_name: object, last_name: object, email: object, address_id: object, active: object, create_date: object, last_update: object | address: object, customer_id: int64, customer_name: object, email: object, phone_number: object, registration_date: object, active: object, address_id: int64, create_date: datetime64[ns], first_name: object, last_name: object, last_update: datetime64[ns], store_id: object, id: object, name: object | Different
+2025-05-13 12:59:06,836 - INFO - Data Comparison: 33 | 33 | Data mismatch detected
+2025-05-13 12:59:06,839 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:59:07,343 - ERROR - The results do not match!
+2025-05-13 12:59:07,350 - INFO - Number of differences detected: 1
+2025-05-13 12:59:07,350 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_STAFF | dbo.staff | Different
+2025-05-13 12:59:07,350 - INFO - Number of Rows: 2 | 1 | Different
+2025-05-13 12:59:07,350 - INFO - Column Names: first_name, active, address_id, picture, last_name, last_update, username, store_id, staff_id, password, email | first_name, active, address_id, last_name, picture, last_update, username, store_id, staff_id, password, email | Same
+2025-05-13 12:59:07,350 - INFO - Data Types: staff_id: object, first_name: object, last_name: object, address_id: object, picture: object, email: object, store_id: object, active: object, username: object, password: object, last_update: object | active: object, address_id: int64, email: object, first_name: object, last_name: object, last_update: datetime64[ns], password: object, picture: object, staff_id: object, store_id: object, username: object | Different
+2025-05-13 12:59:07,350 - INFO - Data Comparison: 1 | 1 | Data mismatch detected
+2025-05-13 12:59:07,352 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:59:07,671 - INFO - The results match perfectly!
+2025-05-13 12:59:07,671 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_INVENTORY | dbo.inventory | Different
+2025-05-13 12:59:07,671 - INFO - Number of Rows: 4581 | 4581 | Same
+2025-05-13 12:59:07,671 - INFO - Column Names: store_id, inventory_id, film_id, last_update | store_id, inventory_id, film_id, last_update | Same
+2025-05-13 12:59:07,671 - INFO - Data Types: inventory_id: object, film_id: object, store_id: object, last_update: object | film_id: int64, inventory_id: object, last_update: datetime64[ns], store_id: object | Different
+2025-05-13 12:59:07,671 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-05-13 12:59:07,675 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:59:07,872 - ERROR - The results do not match!
+2025-05-13 12:59:07,880 - INFO - Number of differences detected: 2
+2025-05-13 12:59:07,880 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_CITY | dbo.city | Different
+2025-05-13 12:59:07,880 - INFO - Number of Rows: 600 | 600 | Same
+2025-05-13 12:59:07,880 - INFO - Column Names: city, city_id, country_id, last_update | city, city_id, country_id, last_update | Same
+2025-05-13 12:59:07,880 - INFO - Data Types: city_id: object, city: object, country_id: object, last_update: object | city: object, city_id: int64, country_id: int64, last_update: datetime64[ns] | Different
+2025-05-13 12:59:07,880 - INFO - Data Comparison: 2 | 2 | Data mismatch detected
+2025-05-13 12:59:07,884 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:59:08,573 - ERROR - The results do not match!
+2025-05-13 12:59:08,623 - INFO - Number of differences detected: 366
+2025-05-13 12:59:08,624 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_RENTAL | dbo.rental | Different
+2025-05-13 12:59:08,624 - INFO - Number of Rows: 16044 | 16044 | Same
+2025-05-13 12:59:08,624 - INFO - Column Names: rental_id, rental_date, return_date, inventory_id, customer_id, last_update, staff_id | rental_id, rental_date, return_date, inventory_id, customer_id, last_update, staff_id | Same
+2025-05-13 12:59:08,624 - INFO - Data Types: rental_id: object, rental_date: object, inventory_id: object, customer_id: object, return_date: object, staff_id: object, last_update: object | customer_id: int64, inventory_id: object, last_update: datetime64[ns], rental_date: datetime64[ns], rental_id: int64, return_date: datetime64[ns], staff_id: object | Different
+2025-05-13 12:59:08,624 - INFO - Data Comparison: 366 | 366 | Data mismatch detected
+2025-05-13 12:59:08,628 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:59:08,860 - ERROR - The results do not match!
+2025-05-13 12:59:08,870 - INFO - Number of differences detected: 603
+2025-05-13 12:59:08,870 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_ADDRESS | dbo.address | Different
+2025-05-13 12:59:08,870 - INFO - Number of Rows: 603 | 0 | Different
+2025-05-13 12:59:08,870 - INFO - Column Names: address2, address_id, district, address, last_update, postal_code, city_id, phone, location | address2, address_id, district, address, last_update, postal_code, city_id, phone, location | Same
+2025-05-13 12:59:08,870 - INFO - Data Types: address_id: object, address: object, address2: object, district: object, city_id: object, postal_code: object, phone: object, location: object, last_update: object | address: object, address2: object, address_id: object, city_id: object, district: object, last_update: object, location: object, phone: object, postal_code: object | Same
+2025-05-13 12:59:08,870 - INFO - Data Comparison: 603 | 603 | Data mismatch detected
+2025-05-13 12:59:08,875 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:59:09,123 - INFO - The results match perfectly!
+2025-05-13 12:59:09,123 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_FILM_TEXT | dbo.film_text | Different
+2025-05-13 12:59:09,123 - INFO - Number of Rows: 1000 | 1000 | Same
+2025-05-13 12:59:09,123 - INFO - Column Names: film_id, description, title | film_id, description, title | Same
+2025-05-13 12:59:09,123 - INFO - Data Types: film_id: object, title: object, description: object | description: object, film_id: int64, title: object | Different
+2025-05-13 12:59:09,123 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-05-13 12:59:09,128 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:59:09,324 - INFO - The results match perfectly!
+2025-05-13 12:59:09,324 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_FILM_CATEGORY | dbo.film_category | Different
+2025-05-13 12:59:09,324 - INFO - Number of Rows: 1000 | 1000 | Same
+2025-05-13 12:59:09,324 - INFO - Column Names: category_id, film_id, last_update | category_id, film_id, last_update | Same
+2025-05-13 12:59:09,324 - INFO - Data Types: film_id: object, category_id: object, last_update: object | category_id: object, film_id: int64, last_update: datetime64[ns] | Different
+2025-05-13 12:59:09,324 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-05-13 12:59:09,331 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:59:09,516 - INFO - The results match perfectly!
+2025-05-13 12:59:09,516 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_LANGUAGE | dbo.language | Different
+2025-05-13 12:59:09,516 - INFO - Number of Rows: 6 | 6 | Same
+2025-05-13 12:59:09,516 - INFO - Column Names: name, language_id, last_update | name, language_id, last_update | Same
+2025-05-13 12:59:09,516 - INFO - Data Types: language_id: object, name: object, last_update: object | language_id: object, last_update: datetime64[ns], name: object | Different
+2025-05-13 12:59:09,516 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-05-13 12:59:09,527 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:59:10,237 - ERROR - The results do not match!
+2025-05-13 12:59:10,365 - INFO - Number of differences detected: 32121
+2025-05-13 12:59:10,365 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_PAYMENT | dbo.payment | Different
+2025-05-13 12:59:10,365 - INFO - Number of Rows: 16077 | 16044 | Different
+2025-05-13 12:59:10,365 - INFO - Column Names: rental_id, payment_date, customer_id, last_update, payment_id, staff_id, amount | rental_id, payment_date, customer_id, last_update, payment_id, staff_id, amount | Same
+2025-05-13 12:59:10,365 - INFO - Data Types: payment_id: object, customer_id: object, staff_id: object, rental_id: object, amount: object, payment_date: object, last_update: object | amount: object, customer_id: int64, last_update: datetime64[ns], payment_date: datetime64[ns], payment_id: int64, rental_id: int64, staff_id: object | Different
+2025-05-13 12:59:10,365 - INFO - Data Comparison: 32121 | 32121 | Data mismatch detected
+2025-05-13 12:59:10,372 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:59:10,677 - ERROR - The results do not match!
+2025-05-13 12:59:10,696 - INFO - Number of differences detected: 1997
+2025-05-13 12:59:10,696 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_NICER_BUT_SLOWER_FILM_LIST | dbo.nicer_but_slower_film_list | Different
+2025-05-13 12:59:10,696 - INFO - Number of Rows: 1000 | 997 | Different
+2025-05-13 12:59:10,696 - INFO - Column Names: length, category, rating, fid, description, title, actors, price | length, category, rating, fid, description, title, actors, price | Same
+2025-05-13 12:59:10,696 - INFO - Data Types: fid: object, title: object, description: object, category: object, price: object, length: object, rating: object, actors: object | actors: object, category: object, description: object, fid: int64, length: int64, price: object, rating: object, title: object | Different
+2025-05-13 12:59:10,696 - INFO - Data Comparison: 1997 | 1997 | Data mismatch detected
+2025-05-13 12:59:10,704 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:59:10,879 - ERROR - The results do not match!
+2025-05-13 12:59:10,884 - INFO - Number of differences detected: 32
+2025-05-13 12:59:10,884 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_SALES_BY_FILM_CATEGORY | dbo.sales_by_film_category | Different
+2025-05-13 12:59:10,884 - INFO - Number of Rows: 16 | 16 | Same
+2025-05-13 12:59:10,884 - INFO - Column Names: category, total_sales | category, total_sales | Same
+2025-05-13 12:59:10,884 - INFO - Data Types: category: object, total_sales: object | category: object, total_sales: object | Same
+2025-05-13 12:59:10,884 - INFO - Data Comparison: 32 | 32 | Data mismatch detected
+2025-05-13 12:59:10,891 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:59:11,152 - ERROR - The results do not match!
+2025-05-13 12:59:11,171 - INFO - Number of differences detected: 1997
+2025-05-13 12:59:11,171 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_FILM_LIST | dbo.film_list | Different
+2025-05-13 12:59:11,171 - INFO - Number of Rows: 1000 | 997 | Different
+2025-05-13 12:59:11,171 - INFO - Column Names: length, category, rating, fid, description, title, actors, price | length, category, rating, fid, description, title, actors, price | Same
+2025-05-13 12:59:11,171 - INFO - Data Types: fid: object, title: object, description: object, category: object, price: object, length: object, rating: object, actors: object | actors: object, category: object, description: object, fid: int64, length: int64, price: object, rating: object, title: object | Different
+2025-05-13 12:59:11,171 - INFO - Data Comparison: 1997 | 1997 | Data mismatch detected
+2025-05-13 12:59:11,179 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:59:11,353 - INFO - The results match perfectly!
+2025-05-13 12:59:11,353 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_CATEGORY | dbo.category | Different
+2025-05-13 12:59:11,353 - INFO - Number of Rows: 16 | 16 | Same
+2025-05-13 12:59:11,353 - INFO - Column Names: name, category_id, last_update | name, category_id, last_update | Same
+2025-05-13 12:59:11,353 - INFO - Data Types: category_id: object, name: object, last_update: object | category_id: object, last_update: datetime64[ns], name: object | Different
+2025-05-13 12:59:11,353 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-05-13 12:59:11,361 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:59:12,179 - ERROR - The results do not match!
+2025-05-13 12:59:12,188 - INFO - Number of differences detected: 6
+2025-05-13 12:59:12,188 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_SALES_BY_STORE | dbo.sales_by_store | Different
+2025-05-13 12:59:12,188 - INFO - Number of Rows: 2 | 4 | Different
+2025-05-13 12:59:12,188 - INFO - Column Names: total_sales, store, manager | total_sales, manager, store | Same
+2025-05-13 12:59:12,188 - INFO - Data Types: store: object, manager: object, total_sales: object | manager: object, store: object, total_sales: object | Same
+2025-05-13 12:59:12,188 - INFO - Data Comparison: 6 | 6 | Data mismatch detected
+2025-05-13 12:59:12,202 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:59:12,417 - ERROR - The results do not match!
+2025-05-13 12:59:12,423 - INFO - Number of differences detected: 60
+2025-05-13 12:59:12,423 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_ACTOR_INFO | dbo.actor_info | Different
+2025-05-13 12:59:12,423 - INFO - Number of Rows: 260 | 200 | Different
+2025-05-13 12:59:12,423 - INFO - Column Names: first_name, film_info, actor_id, last_name | first_name, film_info, actor_id, last_name | Same
+2025-05-13 12:59:12,423 - INFO - Data Types: actor_id: object, first_name: object, last_name: object, film_info: object | actor_id: int64, film_info: object, first_name: object, last_name: object | Different
+2025-05-13 12:59:12,423 - INFO - Data Comparison: 60 | 60 | Data mismatch detected
+2025-05-13 12:59:12,433 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:59:12,692 - INFO - The results match perfectly!
+2025-05-13 12:59:12,692 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_FILM_ACTOR | dbo.film_actor | Different
+2025-05-13 12:59:12,692 - INFO - Number of Rows: 5462 | 5462 | Same
+2025-05-13 12:59:12,692 - INFO - Column Names: film_id, actor_id, last_update | film_id, actor_id, last_update | Same
+2025-05-13 12:59:12,692 - INFO - Data Types: actor_id: object, film_id: object, last_update: object | actor_id: int64, film_id: int64, last_update: datetime64[ns] | Different
+2025-05-13 12:59:12,692 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-05-13 12:59:12,702 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:59:12,880 - INFO - The results match perfectly!
+2025-05-13 12:59:12,880 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_STORE | dbo.store | Different
+2025-05-13 12:59:12,880 - INFO - Number of Rows: 2 | 2 | Same
+2025-05-13 12:59:12,880 - INFO - Column Names: store_id, manager_staff_id, address_id, last_update | store_id, manager_staff_id, address_id, last_update | Same
+2025-05-13 12:59:12,880 - INFO - Data Types: store_id: object, manager_staff_id: object, address_id: object, last_update: object | address_id: int64, last_update: datetime64[ns], manager_staff_id: object, store_id: object | Different
+2025-05-13 12:59:12,880 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-05-13 12:59:12,894 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 12:59:13,143 - ERROR - The results do not match!
+2025-05-13 12:59:13,155 - INFO - Number of differences detected: 1000
+2025-05-13 12:59:13,156 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_FILM | dbo.film | Different
+2025-05-13 12:59:13,156 - INFO - Number of Rows: 1000 | 0 | Different
+2025-05-13 12:59:13,156 - INFO - Column Names: replacement_cost, length, special_features, rating, language_id, last_update, release_year, description, title, rental_rate, rental_duration, film_id, original_language_id | replacement_cost, length, special_features, rating, language_id, last_update, release_year, description, title, rental_rate, rental_duration, film_id, original_language_id | Same
+2025-05-13 12:59:13,156 - INFO - Data Types: film_id: object, title: object, description: object, release_year: object, language_id: object, original_language_id: object, rental_duration: object, rental_rate: object, length: object, replacement_cost: object, rating: object, special_features: object, last_update: object | description: object, film_id: object, language_id: object, last_update: object, length: object, original_language_id: object, rating: object, release_year: object, rental_duration: object, rental_rate: object, replacement_cost: object, special_features: object, title: object | Same
+2025-05-13 12:59:13,156 - INFO - Data Comparison: 1000 | 1000 | Data mismatch detected
+2025-05-13 12:59:13,167 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:05:12,118 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 14:05:12,119 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 14:05:14,815 - ERROR - The results do not match!
+2025-05-13 14:05:14,827 - INFO - Number of differences detected: 0
+2025-05-13 14:05:14,827 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_STORE | dbo.store | Different
+2025-05-13 14:05:14,827 - INFO - Number of Rows: 2 | 2 | Same
+2025-05-13 14:05:14,827 - INFO - Column Names: manager_staff_id, store_id, last_update, address_id | manager_staff_id, store_id, last_update, address_id | Same
+2025-05-13 14:05:14,827 - INFO - Data Types: manager_staff_id: object, store_id: object, last_update: object, address_id: object | manager_staff_id: object, store_id: object, last_update: datetime64[ns], address_id: int64 | Different
+2025-05-13 14:05:14,827 - INFO - Data Comparison: 0 | 0 | Data mismatch detected
+2025-05-13 14:05:14,830 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:05:15,038 - ERROR - The results do not match!
+2025-05-13 14:05:15,049 - INFO - Number of differences detected: 32
+2025-05-13 14:05:15,049 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_SALES_BY_FILM_CATEGORY | dbo.sales_by_film_category | Different
+2025-05-13 14:05:15,049 - INFO - Number of Rows: 16 | 16 | Same
+2025-05-13 14:05:15,049 - INFO - Column Names: category, total_sales | category, total_sales | Same
+2025-05-13 14:05:15,049 - INFO - Data Types: category: object, total_sales: object | category: object, total_sales: object | Same
+2025-05-13 14:05:15,049 - INFO - Data Comparison: 32 | 32 | Data mismatch detected
+2025-05-13 14:05:15,053 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:05:16,695 - ERROR - The results do not match!
+2025-05-13 14:05:16,745 - INFO - Number of differences detected: 366
+2025-05-13 14:05:16,745 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_RENTAL | dbo.rental | Different
+2025-05-13 14:05:16,745 - INFO - Number of Rows: 16044 | 16044 | Same
+2025-05-13 14:05:16,745 - INFO - Column Names: return_date, rental_date, inventory_id, last_update, rental_id, staff_id, customer_id | return_date, rental_date, inventory_id, last_update, rental_id, staff_id, customer_id | Same
+2025-05-13 14:05:16,745 - INFO - Data Types: return_date: object, rental_date: object, inventory_id: object, last_update: object, rental_id: object, staff_id: object, customer_id: object | return_date: datetime64[ns], rental_date: datetime64[ns], inventory_id: object, last_update: datetime64[ns], rental_id: int64, staff_id: object, customer_id: int64 | Different
+2025-05-13 14:05:16,745 - INFO - Data Comparison: 366 | 366 | Data mismatch detected
+2025-05-13 14:05:16,748 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:05:17,003 - ERROR - The results do not match!
+2025-05-13 14:05:17,010 - INFO - Number of differences detected: 1
+2025-05-13 14:05:17,010 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_STAFF | dbo.staff | Different
+2025-05-13 14:05:17,010 - INFO - Number of Rows: 2 | 1 | Different
+2025-05-13 14:05:17,010 - INFO - Column Names: last_name, email, username, first_name, address_id, password, last_update, staff_id, picture, active, store_id | last_name, email, username, first_name, address_id, password, last_update, staff_id, active, picture, store_id | Same
+2025-05-13 14:05:17,010 - INFO - Data Types: last_name: object, email: object, username: object, first_name: object, address_id: object, password: object, last_update: object, staff_id: object, active: object, picture: object, store_id: object | last_name: object, email: object, username: object, first_name: object, address_id: int64, password: object, last_update: datetime64[ns], staff_id: object, active: object, picture: object, store_id: object | Different
+2025-05-13 14:05:17,010 - INFO - Data Comparison: 1 | 1 | Data mismatch detected
+2025-05-13 14:05:17,013 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:05:17,247 - ERROR - The results do not match!
+2025-05-13 14:05:17,254 - INFO - Number of differences detected: 33
+2025-05-13 14:05:17,254 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_CUSTOMER | dbo.customer | Different
+2025-05-13 14:05:17,254 - INFO - Number of Rows: 632 | 599 | Different
+2025-05-13 14:05:17,254 - INFO - Column Names: last_name, email, first_name, address_id, create_date, last_update, active, store_id, customer_id | last_name, name, email, id, first_name, address_id, create_date, phone_number, last_update, customer_name, active, address, store_id, registration_date, customer_id | Different
+2025-05-13 14:05:17,254 - INFO - Data Types: last_name: object, email: object, first_name: object, address_id: object, create_date: object, last_update: object, active: object, store_id: object, customer_id: object | last_name: object, email: object, first_name: object, address_id: int64, create_date: datetime64[ns], last_update: datetime64[ns], active: object, store_id: object, customer_id: int64 | Different
+2025-05-13 14:05:17,254 - INFO - Data Comparison: 33 | 33 | Data mismatch detected
+2025-05-13 14:05:17,258 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:05:17,813 - ERROR - The results do not match!
+2025-05-13 14:05:17,820 - INFO - Number of differences detected: 0
+2025-05-13 14:05:17,820 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_LANGUAGE | dbo.language | Different
+2025-05-13 14:05:17,820 - INFO - Number of Rows: 6 | 6 | Same
+2025-05-13 14:05:17,820 - INFO - Column Names: last_update, language_id, name | last_update, language_id, name | Same
+2025-05-13 14:05:17,820 - INFO - Data Types: last_update: object, name: object, language_id: object | last_update: datetime64[ns], name: object, language_id: object | Different
+2025-05-13 14:05:17,820 - INFO - Data Comparison: 0 | 0 | Data mismatch detected
+2025-05-13 14:05:17,824 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:05:18,017 - ERROR - The results do not match!
+2025-05-13 14:05:18,027 - INFO - Number of differences detected: 0
+2025-05-13 14:05:18,027 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_CATEGORY | dbo.category | Different
+2025-05-13 14:05:18,027 - INFO - Number of Rows: 16 | 16 | Same
+2025-05-13 14:05:18,027 - INFO - Column Names: last_update, name, category_id | last_update, name, category_id | Same
+2025-05-13 14:05:18,027 - INFO - Data Types: last_update: object, name: object, category_id: object | last_update: datetime64[ns], name: object, category_id: object | Different
+2025-05-13 14:05:18,027 - INFO - Data Comparison: 0 | 0 | Data mismatch detected
+2025-05-13 14:05:18,033 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:05:18,337 - ERROR - The results do not match!
+2025-05-13 14:05:18,356 - INFO - Number of differences detected: 1997
+2025-05-13 14:05:18,356 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_NICER_BUT_SLOWER_FILM_LIST | dbo.nicer_but_slower_film_list | Different
+2025-05-13 14:05:18,356 - INFO - Number of Rows: 1000 | 997 | Different
+2025-05-13 14:05:18,356 - INFO - Column Names: actors, rating, fid, length, title, category, price, description | actors, rating, fid, length, title, category, price, description | Same
+2025-05-13 14:05:18,356 - INFO - Data Types: actors: object, fid: object, length: object, description: object, title: object, category: object, price: object, rating: object | actors: object, fid: int64, length: int64, description: object, title: object, category: object, price: object, rating: object | Different
+2025-05-13 14:05:18,356 - INFO - Data Comparison: 1997 | 1997 | Data mismatch detected
+2025-05-13 14:05:18,363 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:05:18,617 - ERROR - The results do not match!
+2025-05-13 14:05:18,624 - INFO - Number of differences detected: 60
+2025-05-13 14:05:18,624 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_ACTOR_INFO | dbo.actor_info | Different
+2025-05-13 14:05:18,624 - INFO - Number of Rows: 260 | 200 | Different
+2025-05-13 14:05:18,624 - INFO - Column Names: last_name, actor_id, film_info, first_name | last_name, actor_id, film_info, first_name | Same
+2025-05-13 14:05:18,624 - INFO - Data Types: last_name: object, actor_id: object, film_info: object, first_name: object | last_name: object, actor_id: int64, film_info: object, first_name: object | Different
+2025-05-13 14:05:18,624 - INFO - Data Comparison: 60 | 60 | Data mismatch detected
+2025-05-13 14:05:18,630 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:05:18,882 - ERROR - The results do not match!
+2025-05-13 14:05:18,889 - INFO - Number of differences detected: 0
+2025-05-13 14:05:18,889 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_FILM_ACTOR | dbo.film_actor | Different
+2025-05-13 14:05:18,889 - INFO - Number of Rows: 5462 | 5462 | Same
+2025-05-13 14:05:18,889 - INFO - Column Names: actor_id, last_update, film_id | actor_id, last_update, film_id | Same
+2025-05-13 14:05:18,889 - INFO - Data Types: actor_id: object, last_update: object, film_id: object | actor_id: int64, last_update: datetime64[ns], film_id: int64 | Different
+2025-05-13 14:05:18,889 - INFO - Data Comparison: 0 | 0 | Data mismatch detected
+2025-05-13 14:05:18,897 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:05:19,146 - ERROR - The results do not match!
+2025-05-13 14:05:19,158 - INFO - Number of differences detected: 1000
+2025-05-13 14:05:19,158 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_FILM | dbo.film | Different
+2025-05-13 14:05:19,158 - INFO - Number of Rows: 1000 | 0 | Different
+2025-05-13 14:05:19,158 - INFO - Column Names: original_language_id, rating, replacement_cost, rental_duration, rental_rate, special_features, length, last_update, release_year, title, language_id, film_id, description | original_language_id, rating, replacement_cost, rental_duration, rental_rate, special_features, last_update, length, release_year, title, language_id, film_id, description | Same
+2025-05-13 14:05:19,158 - INFO - Data Types: original_language_id: object, replacement_cost: object, rental_duration: object, special_features: object, last_update: object, length: object, release_year: object, film_id: object, description: object, title: object, language_id: object, rental_rate: object, rating: object | original_language_id: object, replacement_cost: object, rental_duration: object, special_features: object, last_update: object, length: object, release_year: object, film_id: object, description: object, title: object, language_id: object, rental_rate: object, rating: object | Same
+2025-05-13 14:05:19,158 - INFO - Data Comparison: 1000 | 1000 | Data mismatch detected
+2025-05-13 14:05:19,166 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:05:19,403 - ERROR - The results do not match!
+2025-05-13 14:05:19,413 - INFO - Number of differences detected: 603
+2025-05-13 14:05:19,413 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_ADDRESS | dbo.address | Different
+2025-05-13 14:05:19,413 - INFO - Number of Rows: 603 | 0 | Different
+2025-05-13 14:05:19,413 - INFO - Column Names: address2, postal_code, location, address_id, phone, last_update, district, address, city_id | address2, location, postal_code, address_id, phone, last_update, district, address, city_id | Same
+2025-05-13 14:05:19,413 - INFO - Data Types: address2: object, location: object, postal_code: object, address_id: object, phone: object, last_update: object, district: object, address: object, city_id: object | address2: object, location: object, postal_code: object, address_id: object, phone: object, last_update: object, district: object, address: object, city_id: object | Same
+2025-05-13 14:05:19,414 - INFO - Data Comparison: 603 | 603 | Data mismatch detected
+2025-05-13 14:05:19,421 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:05:19,710 - ERROR - The results do not match!
+2025-05-13 14:05:19,718 - INFO - Number of differences detected: 0
+2025-05-13 14:05:19,718 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_INVENTORY | dbo.inventory | Different
+2025-05-13 14:05:19,718 - INFO - Number of Rows: 4581 | 4581 | Same
+2025-05-13 14:05:19,718 - INFO - Column Names: inventory_id, store_id, last_update, film_id | inventory_id, store_id, last_update, film_id | Same
+2025-05-13 14:05:19,719 - INFO - Data Types: inventory_id: object, store_id: object, last_update: object, film_id: object | inventory_id: object, store_id: object, last_update: datetime64[ns], film_id: int64 | Different
+2025-05-13 14:05:19,719 - INFO - Data Comparison: 0 | 0 | Data mismatch detected
+2025-05-13 14:05:19,726 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:05:20,326 - ERROR - The results do not match!
+2025-05-13 14:05:20,348 - INFO - Number of differences detected: 147
+2025-05-13 14:05:20,348 - INFO - Executed Entity: MY_DB.MY_SCHEMA.SQLSERVER_COUNTRY | dbo.country | Different
+2025-05-13 14:05:20,348 - INFO - Number of Rows: 15276 | 13290 | Different
+2025-05-13 14:05:20,348 - INFO - Column Names: lastmodified, last_update, country, country_id | capital, name, country_id, code, region, surfacearea, lifeexpectancy, population, governmentform, last_update, continent, localname, headofstate, code2, indepyear, country, gnp, gnpold | Different
+2025-05-13 14:05:20,348 - INFO - Data Types: last_update: object, country: object, country_id: object | last_update: datetime64[ns], country: object, country_id: int64 | Different
+2025-05-13 14:05:20,348 - INFO - Data Comparison: 147 | 147 | Data mismatch detected
+2025-05-13 14:05:20,358 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:05:20,645 - ERROR - The results do not match!
+2025-05-13 14:05:20,665 - INFO - Number of differences detected: 1997
+2025-05-13 14:05:20,665 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_FILM_LIST | dbo.film_list | Different
+2025-05-13 14:05:20,665 - INFO - Number of Rows: 1000 | 997 | Different
+2025-05-13 14:05:20,665 - INFO - Column Names: actors, rating, fid, length, title, category, price, description | actors, rating, fid, length, title, category, price, description | Same
+2025-05-13 14:05:20,665 - INFO - Data Types: actors: object, fid: object, length: object, description: object, title: object, category: object, price: object, rating: object | actors: object, fid: int64, length: int64, description: object, title: object, category: object, price: object, rating: object | Different
+2025-05-13 14:05:20,666 - INFO - Data Comparison: 1997 | 1997 | Data mismatch detected
+2025-05-13 14:05:20,679 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:05:21,047 - ERROR - The results do not match!
+2025-05-13 14:05:21,054 - INFO - Number of differences detected: 0
+2025-05-13 14:05:21,054 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_FILM_TEXT | dbo.film_text | Different
+2025-05-13 14:05:21,054 - INFO - Number of Rows: 1000 | 1000 | Same
+2025-05-13 14:05:21,054 - INFO - Column Names: title, film_id, description | title, film_id, description | Same
+2025-05-13 14:05:21,054 - INFO - Data Types: title: object, film_id: object, description: object | title: object, film_id: int64, description: object | Different
+2025-05-13 14:05:21,054 - INFO - Data Comparison: 0 | 0 | Data mismatch detected
+2025-05-13 14:05:21,063 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:05:21,790 - ERROR - The results do not match!
+2025-05-13 14:05:21,933 - INFO - Number of differences detected: 32121
+2025-05-13 14:05:21,933 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_PAYMENT | dbo.payment | Different
+2025-05-13 14:05:21,933 - INFO - Number of Rows: 16077 | 16044 | Different
+2025-05-13 14:05:21,933 - INFO - Column Names: payment_date, last_update, rental_id, staff_id, amount, payment_id, customer_id | customer_id, last_update, rental_id, staff_id, amount, payment_id, payment_date | Same
+2025-05-13 14:05:21,933 - INFO - Data Types: payment_date: object, last_update: object, rental_id: object, staff_id: object, amount: object, payment_id: object, customer_id: object | payment_date: datetime64[ns], last_update: datetime64[ns], rental_id: int64, staff_id: object, amount: object, payment_id: int64, customer_id: int64 | Different
+2025-05-13 14:05:21,933 - INFO - Data Comparison: 32121 | 32121 | Data mismatch detected
+2025-05-13 14:05:21,944 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:05:22,173 - ERROR - The results do not match!
+2025-05-13 14:05:22,181 - INFO - Number of differences detected: 2
+2025-05-13 14:05:22,181 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_CITY | dbo.city | Different
+2025-05-13 14:05:22,181 - INFO - Number of Rows: 600 | 600 | Same
+2025-05-13 14:05:22,181 - INFO - Column Names: city_id, city, last_update, country_id | city_id, city, last_update, country_id | Same
+2025-05-13 14:05:22,181 - INFO - Data Types: country_id: object, city_id: object, city: object, last_update: object | country_id: int64, city_id: int64, city: object, last_update: datetime64[ns] | Different
+2025-05-13 14:05:22,181 - INFO - Data Comparison: 2 | 2 | Data mismatch detected
+2025-05-13 14:05:22,192 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:05:22,412 - ERROR - The results do not match!
+2025-05-13 14:05:22,417 - INFO - Number of differences detected: 0
+2025-05-13 14:05:22,417 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_FILM_CATEGORY | dbo.film_category | Different
+2025-05-13 14:05:22,417 - INFO - Number of Rows: 1000 | 1000 | Same
+2025-05-13 14:05:22,417 - INFO - Column Names: last_update, film_id, category_id | last_update, film_id, category_id | Same
+2025-05-13 14:05:22,418 - INFO - Data Types: last_update: object, film_id: object, category_id: object | last_update: datetime64[ns], film_id: int64, category_id: object | Different
+2025-05-13 14:05:22,418 - INFO - Data Comparison: 0 | 0 | Data mismatch detected
+2025-05-13 14:05:22,429 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:05:22,619 - ERROR - The results do not match!
+2025-05-13 14:05:22,623 - INFO - Number of differences detected: 6
+2025-05-13 14:05:22,623 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_SALES_BY_STORE | dbo.sales_by_store | Different
+2025-05-13 14:05:22,623 - INFO - Number of Rows: 2 | 4 | Different
+2025-05-13 14:05:22,624 - INFO - Column Names: manager, total_sales, store | manager, total_sales, store | Same
+2025-05-13 14:05:22,624 - INFO - Data Types: manager: object, total_sales: object, store: object | manager: object, total_sales: object, store: object | Same
+2025-05-13 14:05:22,624 - INFO - Data Comparison: 6 | 6 | Data mismatch detected
+2025-05-13 14:05:22,634 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:08:50,032 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 14:08:50,032 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 14:08:52,071 - INFO - The results match perfectly!
+2025-05-13 14:08:52,071 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_STORE | dbo.store | Different
+2025-05-13 14:08:52,071 - INFO - Number of Rows: 2 | 2 | Same
+2025-05-13 14:08:52,071 - INFO - Column Names: store_id, manager_staff_id, address_id, last_update | store_id, manager_staff_id, address_id, last_update | Same
+2025-05-13 14:08:52,071 - INFO - Data Types: store_id: object, manager_staff_id: object, address_id: object, last_update: object | store_id: object, manager_staff_id: object, address_id: int64, last_update: datetime64[ns] | Different
+2025-05-13 14:08:52,071 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-05-13 14:08:52,074 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:08:52,249 - ERROR - The results do not match!
+2025-05-13 14:08:52,257 - INFO - Number of differences detected: 32
+2025-05-13 14:08:52,257 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_SALES_BY_FILM_CATEGORY | dbo.sales_by_film_category | Different
+2025-05-13 14:08:52,258 - INFO - Number of Rows: 16 | 16 | Same
+2025-05-13 14:08:52,258 - INFO - Column Names: category, total_sales | category, total_sales | Same
+2025-05-13 14:08:52,258 - INFO - Data Types: category: object, total_sales: object | category: object, total_sales: object | Same
+2025-05-13 14:08:52,258 - INFO - Data Comparison: 32 | 32 | Data mismatch detected
+2025-05-13 14:08:52,261 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:08:53,045 - ERROR - The results do not match!
+2025-05-13 14:08:53,095 - INFO - Number of differences detected: 366
+2025-05-13 14:08:53,095 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_RENTAL | dbo.rental | Different
+2025-05-13 14:08:53,096 - INFO - Number of Rows: 16044 | 16044 | Same
+2025-05-13 14:08:53,096 - INFO - Column Names: inventory_id, rental_id, return_date, last_update, customer_id, rental_date, staff_id | inventory_id, rental_id, return_date, last_update, customer_id, rental_date, staff_id | Same
+2025-05-13 14:08:53,096 - INFO - Data Types: inventory_id: object, rental_id: object, return_date: object, last_update: object, customer_id: object, rental_date: object, staff_id: object | inventory_id: object, rental_id: int64, return_date: datetime64[ns], last_update: datetime64[ns], customer_id: int64, rental_date: datetime64[ns], staff_id: object | Different
+2025-05-13 14:08:53,096 - INFO - Data Comparison: 366 | 366 | Data mismatch detected
+2025-05-13 14:08:53,101 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:08:53,334 - ERROR - The results do not match!
+2025-05-13 14:08:53,340 - INFO - Number of differences detected: 33
+2025-05-13 14:08:53,340 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_CUSTOMER | dbo.customer | Different
+2025-05-13 14:08:53,341 - INFO - Number of Rows: 632 | 599 | Different
+2025-05-13 14:08:53,341 - INFO - Column Names: create_date, store_id, first_name, last_update, last_name, email, address_id, active, customer_id | create_date, registration_date, store_id, first_name, id, address, name, phone_number, last_update, last_name, email, address_id, active, customer_id, customer_name | Different
+2025-05-13 14:08:53,341 - INFO - Data Types: create_date: object, store_id: object, first_name: object, last_update: object, last_name: object, email: object, address_id: object, active: object, customer_id: object | create_date: datetime64[ns], store_id: object, first_name: object, last_update: datetime64[ns], last_name: object, email: object, address_id: int64, active: object, customer_id: int64 | Different
+2025-05-13 14:08:53,341 - INFO - Data Comparison: 33 | 33 | Data mismatch detected
+2025-05-13 14:08:53,344 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:08:53,611 - ERROR - The results do not match!
+2025-05-13 14:08:53,632 - INFO - Number of differences detected: 1997
+2025-05-13 14:08:53,632 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_FILM_LIST | dbo.film_list | Different
+2025-05-13 14:08:53,632 - INFO - Number of Rows: 1000 | 997 | Different
+2025-05-13 14:08:53,632 - INFO - Column Names: actors, title, category, description, fid, rating, length, price | actors, category, title, fid, description, rating, length, price | Same
+2025-05-13 14:08:53,633 - INFO - Data Types: actors: object, title: object, category: object, fid: object, description: object, rating: object, length: object, price: object | actors: object, title: object, category: object, fid: int64, description: object, rating: object, length: int64, price: object | Different
+2025-05-13 14:08:53,633 - INFO - Data Comparison: 1997 | 1997 | Data mismatch detected
+2025-05-13 14:08:53,637 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:08:53,970 - INFO - The results match perfectly!
+2025-05-13 14:08:53,970 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_FILM_ACTOR | dbo.film_actor | Different
+2025-05-13 14:08:53,970 - INFO - Number of Rows: 5462 | 5462 | Same
+2025-05-13 14:08:53,970 - INFO - Column Names: film_id, last_update, actor_id | film_id, last_update, actor_id | Same
+2025-05-13 14:08:53,970 - INFO - Data Types: actor_id: object, film_id: object, last_update: object | actor_id: int64, film_id: int64, last_update: datetime64[ns] | Different
+2025-05-13 14:08:53,970 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-05-13 14:08:53,974 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:08:54,482 - ERROR - The results do not match!
+2025-05-13 14:08:54,499 - INFO - Number of differences detected: 1000
+2025-05-13 14:08:54,499 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_FILM | dbo.film | Different
+2025-05-13 14:08:54,499 - INFO - Number of Rows: 1000 | 0 | Different
+2025-05-13 14:08:54,499 - INFO - Column Names: rental_rate, language_id, title, original_language_id, description, rental_duration, release_year, rating, last_update, length, special_features, replacement_cost, film_id | rental_rate, language_id, title, original_language_id, description, rating, last_update, release_year, rental_duration, length, special_features, replacement_cost, film_id | Same
+2025-05-13 14:08:54,499 - INFO - Data Types: rental_rate: object, language_id: object, title: object, original_language_id: object, description: object, rating: object, last_update: object, release_year: object, rental_duration: object, length: object, special_features: object, replacement_cost: object, film_id: object | rental_rate: object, language_id: object, title: object, original_language_id: object, description: object, rating: object, last_update: object, release_year: object, rental_duration: object, length: object, special_features: object, replacement_cost: object, film_id: object | Same
+2025-05-13 14:08:54,499 - INFO - Data Comparison: 1000 | 1000 | Data mismatch detected
+2025-05-13 14:08:54,505 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:08:55,210 - INFO - The results match perfectly!
+2025-05-13 14:08:55,211 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_CATEGORY | dbo.category | Different
+2025-05-13 14:08:55,211 - INFO - Number of Rows: 16 | 16 | Same
+2025-05-13 14:08:55,211 - INFO - Column Names: category_id, name, last_update | category_id, name, last_update | Same
+2025-05-13 14:08:55,211 - INFO - Data Types: category_id: object, name: object, last_update: object | category_id: object, name: object, last_update: datetime64[ns] | Different
+2025-05-13 14:08:55,211 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-05-13 14:08:55,219 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:08:55,474 - ERROR - The results do not match!
+2025-05-13 14:08:55,480 - INFO - Number of differences detected: 0
+2025-05-13 14:08:55,480 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_FILM_TEXT | dbo.film_text | Different
+2025-05-13 14:08:55,480 - INFO - Number of Rows: 1000 | 1000 | Same
+2025-05-13 14:08:55,480 - INFO - Column Names: title, film_id, description | title, film_id, description | Same
+2025-05-13 14:08:55,481 - INFO - Data Types: title: object, film_id: object, description: object | title: object, film_id: int64, description: object | Different
+2025-05-13 14:08:55,481 - INFO - Data Comparison: 0 | 0 | Data mismatch detected
+2025-05-13 14:08:55,486 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:08:56,261 - ERROR - The results do not match!
+2025-05-13 14:08:56,283 - INFO - Number of differences detected: 147
+2025-05-13 14:08:56,283 - INFO - Executed Entity: MY_DB.MY_SCHEMA.SQLSERVER_COUNTRY | dbo.country | Different
+2025-05-13 14:08:56,283 - INFO - Number of Rows: 15276 | 13290 | Different
+2025-05-13 14:08:56,283 - INFO - Column Names: country_id, country, lastmodified, last_update | population, code2, continent, region, lifeexpectancy, gnpold, governmentform, headofstate, localname, name, last_update, gnp, indepyear, capital, code, country_id, country, surfacearea | Different
+2025-05-13 14:08:56,284 - INFO - Data Types: country_id: object, country: object, last_update: object | country_id: int64, country: object, last_update: datetime64[ns] | Different
+2025-05-13 14:08:56,284 - INFO - Data Comparison: 147 | 147 | Data mismatch detected
+2025-05-13 14:08:56,290 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:08:56,509 - ERROR - The results do not match!
+2025-05-13 14:08:56,518 - INFO - Number of differences detected: 2
+2025-05-13 14:08:56,518 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_CITY | dbo.city | Different
+2025-05-13 14:08:56,518 - INFO - Number of Rows: 600 | 600 | Same
+2025-05-13 14:08:56,518 - INFO - Column Names: country_id, city, city_id, last_update | country_id, city, city_id, last_update | Same
+2025-05-13 14:08:56,518 - INFO - Data Types: country_id: object, city: object, city_id: object, last_update: object | country_id: int64, city: object, city_id: int64, last_update: datetime64[ns] | Different
+2025-05-13 14:08:56,518 - INFO - Data Comparison: 2 | 2 | Data mismatch detected
+2025-05-13 14:08:56,524 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:08:57,060 - ERROR - The results do not match!
+2025-05-13 14:08:57,218 - INFO - Number of differences detected: 32121
+2025-05-13 14:08:57,218 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_PAYMENT | dbo.payment | Different
+2025-05-13 14:08:57,218 - INFO - Number of Rows: 16077 | 16044 | Different
+2025-05-13 14:08:57,218 - INFO - Column Names: rental_id, amount, last_update, payment_id, payment_date, customer_id, staff_id | rental_id, amount, last_update, payment_id, payment_date, customer_id, staff_id | Same
+2025-05-13 14:08:57,218 - INFO - Data Types: rental_id: object, amount: object, last_update: object, payment_id: object, payment_date: object, customer_id: object, staff_id: object | rental_id: int64, amount: object, last_update: datetime64[ns], payment_id: int64, payment_date: datetime64[ns], customer_id: int64, staff_id: object | Different
+2025-05-13 14:08:57,218 - INFO - Data Comparison: 32121 | 32121 | Data mismatch detected
+2025-05-13 14:08:57,226 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:08:57,448 - ERROR - The results do not match!
+2025-05-13 14:08:57,454 - INFO - Number of differences detected: 60
+2025-05-13 14:08:57,454 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_ACTOR_INFO | dbo.actor_info | Different
+2025-05-13 14:08:57,454 - INFO - Number of Rows: 260 | 200 | Different
+2025-05-13 14:08:57,454 - INFO - Column Names: film_info, last_name, first_name, actor_id | film_info, last_name, first_name, actor_id | Same
+2025-05-13 14:08:57,454 - INFO - Data Types: film_info: object, last_name: object, first_name: object, actor_id: object | film_info: object, last_name: object, first_name: object, actor_id: int64 | Different
+2025-05-13 14:08:57,454 - INFO - Data Comparison: 60 | 60 | Data mismatch detected
+2025-05-13 14:08:57,462 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:08:57,684 - ERROR - The results do not match!
+2025-05-13 14:08:57,694 - INFO - Number of differences detected: 603
+2025-05-13 14:08:57,694 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_ADDRESS | dbo.address | Different
+2025-05-13 14:08:57,694 - INFO - Number of Rows: 603 | 0 | Different
+2025-05-13 14:08:57,694 - INFO - Column Names: city_id, location, district, address, last_update, phone, address_id, postal_code, address2 | city_id, location, district, address, last_update, phone, address_id, postal_code, address2 | Same
+2025-05-13 14:08:57,694 - INFO - Data Types: city_id: object, location: object, district: object, address: object, last_update: object, phone: object, address_id: object, postal_code: object, address2: object | city_id: object, location: object, district: object, address: object, last_update: object, phone: object, address_id: object, postal_code: object, address2: object | Same
+2025-05-13 14:08:57,694 - INFO - Data Comparison: 603 | 603 | Data mismatch detected
+2025-05-13 14:08:57,703 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:08:57,944 - INFO - The results match perfectly!
+2025-05-13 14:08:57,944 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_INVENTORY | dbo.inventory | Different
+2025-05-13 14:08:57,944 - INFO - Number of Rows: 4581 | 4581 | Same
+2025-05-13 14:08:57,944 - INFO - Column Names: inventory_id, film_id, store_id, last_update | inventory_id, film_id, store_id, last_update | Same
+2025-05-13 14:08:57,944 - INFO - Data Types: inventory_id: object, film_id: object, store_id: object, last_update: object | inventory_id: object, film_id: int64, store_id: object, last_update: datetime64[ns] | Different
+2025-05-13 14:08:57,944 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-05-13 14:08:57,954 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:08:58,161 - ERROR - The results do not match!
+2025-05-13 14:08:58,166 - INFO - Number of differences detected: 1
+2025-05-13 14:08:58,167 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_STAFF | dbo.staff | Different
+2025-05-13 14:08:58,167 - INFO - Number of Rows: 2 | 1 | Different
+2025-05-13 14:08:58,167 - INFO - Column Names: store_id, first_name, last_update, last_name, email, address_id, password, active, picture, username, staff_id | store_id, first_name, last_update, last_name, email, address_id, password, active, picture, username, staff_id | Same
+2025-05-13 14:08:58,167 - INFO - Data Types: store_id: object, first_name: object, last_update: object, last_name: object, email: object, address_id: object, password: object, active: object, picture: object, username: object, staff_id: object | store_id: object, first_name: object, last_update: datetime64[ns], last_name: object, email: object, address_id: int64, password: object, active: object, picture: object, username: object, staff_id: object | Different
+2025-05-13 14:08:58,167 - INFO - Data Comparison: 1 | 1 | Data mismatch detected
+2025-05-13 14:08:58,176 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:08:58,348 - INFO - The results match perfectly!
+2025-05-13 14:08:58,348 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_LANGUAGE | dbo.language | Different
+2025-05-13 14:08:58,348 - INFO - Number of Rows: 6 | 6 | Same
+2025-05-13 14:08:58,348 - INFO - Column Names: language_id, name, last_update | language_id, name, last_update | Same
+2025-05-13 14:08:58,348 - INFO - Data Types: language_id: object, name: object, last_update: object | language_id: object, name: object, last_update: datetime64[ns] | Different
+2025-05-13 14:08:58,348 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-05-13 14:08:58,358 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:08:58,546 - ERROR - The results do not match!
+2025-05-13 14:08:58,552 - INFO - Number of differences detected: 0
+2025-05-13 14:08:58,552 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_FILM_CATEGORY | dbo.film_category | Different
+2025-05-13 14:08:58,552 - INFO - Number of Rows: 1000 | 1000 | Same
+2025-05-13 14:08:58,552 - INFO - Column Names: film_id, last_update, category_id | film_id, category_id, last_update | Same
+2025-05-13 14:08:58,552 - INFO - Data Types: film_id: object, last_update: object, category_id: object | film_id: int64, last_update: datetime64[ns], category_id: object | Different
+2025-05-13 14:08:58,552 - INFO - Data Comparison: 0 | 0 | Data mismatch detected
+2025-05-13 14:08:58,562 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:08:58,733 - ERROR - The results do not match!
+2025-05-13 14:08:58,738 - INFO - Number of differences detected: 6
+2025-05-13 14:08:58,738 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_SALES_BY_STORE | dbo.sales_by_store | Different
+2025-05-13 14:08:58,738 - INFO - Number of Rows: 2 | 4 | Different
+2025-05-13 14:08:58,739 - INFO - Column Names: store, total_sales, manager | store, total_sales, manager | Same
+2025-05-13 14:08:58,739 - INFO - Data Types: store: object, total_sales: object, manager: object | store: object, total_sales: object, manager: object | Same
+2025-05-13 14:08:58,739 - INFO - Data Comparison: 6 | 6 | Data mismatch detected
+2025-05-13 14:08:58,751 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 14:08:59,002 - ERROR - The results do not match!
+2025-05-13 14:08:59,020 - INFO - Number of differences detected: 1997
+2025-05-13 14:08:59,021 - INFO - Executed Entity: MY_DB.MY_SCHEMA.MYSQL_NICER_BUT_SLOWER_FILM_LIST | dbo.nicer_but_slower_film_list | Different
+2025-05-13 14:08:59,021 - INFO - Number of Rows: 1000 | 997 | Different
+2025-05-13 14:08:59,021 - INFO - Column Names: actors, title, category, description, fid, rating, length, price | actors, category, title, fid, description, rating, length, price | Same
+2025-05-13 14:08:59,021 - INFO - Data Types: actors: object, title: object, category: object, fid: object, description: object, rating: object, length: object, price: object | actors: object, title: object, category: object, fid: int64, description: object, rating: object, length: int64, price: object | Different
+2025-05-13 14:08:59,021 - INFO - Data Comparison: 1997 | 1997 | Data mismatch detected
+2025-05-13 14:08:59,032 - INFO - HTML report generated: Dq_analysis/Tables/Table_comparison_report.html
+2025-05-13 15:52:34,751 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 15:52:34,753 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 15:52:35,666 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 15:52:35,667 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 15:55:29,875 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 15:55:29,875 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 15:55:30,610 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 15:55:30,611 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 15:55:34,949 - ERROR - The results do not match!
+2025-05-13 15:55:34,959 - INFO - Differences saved to Dq_analysis/Views/dbo.vw_OverdueCustomersdifferences.csv
+2025-05-13 15:55:34,960 - INFO - Number of differences detected in dbo.vw_OverdueCustomers, view: 0
+2025-05-13 15:55:34,960 - INFO - Executed Entity: MY_DB.MY_SCHEMA.VW_OVERDUECUSTOMERS | dbo.vw_OverdueCustomers | Different
+2025-05-13 15:55:34,960 - INFO - Number of Rows: 159 | 159 | Same
+2025-05-13 15:55:34,960 - INFO - Column Names: rental_date, full_name, customer_id, return_date | rental_date, full_name, customer_id, return_date | Same
+2025-05-13 15:55:34,960 - INFO - Data Types: rental_date: object, full_name: object, customer_id: object, return_date: object | rental_date: datetime64[ns], full_name: object, customer_id: int64, return_date: object | Different
+2025-05-13 15:55:34,960 - INFO - Data Comparison: 0 | 0 | Data mismatch detected
+2025-05-13 15:55:34,965 - INFO - HTML report generated: Dq_analysis/Views/View_comparison_report.html
+2025-05-13 15:55:35,600 - ERROR - The results do not match!
+2025-05-13 15:55:35,608 - INFO - Differences saved to Dq_analysis/Views/dbo.vw_TopRentingCustomersdifferences.csv
+2025-05-13 15:55:35,608 - INFO - Number of differences detected in dbo.vw_TopRentingCustomers, view: 0
+2025-05-13 15:55:35,608 - INFO - Executed Entity: MY_DB.MY_SCHEMA.VW_TOPRENTINGCUSTOMERS | dbo.vw_TopRentingCustomers | Different
+2025-05-13 15:55:35,608 - INFO - Number of Rows: 599 | 599 | Same
+2025-05-13 15:55:35,608 - INFO - Column Names: full_name, customer_id, total_rentals | full_name, customer_id, total_rentals | Same
+2025-05-13 15:55:35,608 - INFO - Data Types: full_name: object, customer_id: object, total_rentals: int64 | full_name: object, customer_id: int64, total_rentals: int64 | Different
+2025-05-13 15:55:35,608 - INFO - Data Comparison: 0 | 0 | Data mismatch detected
+2025-05-13 15:55:35,611 - INFO - HTML report generated: Dq_analysis/Views/View_comparison_report.html
+2025-05-13 15:55:36,118 - ERROR - The results do not match!
+2025-05-13 15:55:36,129 - INFO - Differences saved to Dq_analysis/Views/dbo.vw_FilmAvailabilitydifferences.csv
+2025-05-13 15:55:36,129 - INFO - Number of differences detected in dbo.vw_FilmAvailability, view: 958
+2025-05-13 15:55:36,129 - INFO - Executed Entity: MY_DB.MY_SCHEMA.VW_FILMAVAILABILITY | dbo.vw_FilmAvailability | Different
+2025-05-13 15:55:36,129 - INFO - Number of Rows: 958 | 0 | Different
+2025-05-13 15:55:36,129 - INFO - Column Names: copies_available, title, film_id | copies_available, title, film_id | Same
+2025-05-13 15:55:36,129 - INFO - Data Types: copies_available: int64, title: object, film_id: object | copies_available: object, title: object, film_id: object | Different
+2025-05-13 15:55:36,129 - INFO - Data Comparison: 958 | 958 | Data mismatch detected
+2025-05-13 15:55:36,135 - INFO - HTML report generated: Dq_analysis/Views/View_comparison_report.html
+2025-05-13 15:55:36,990 - ERROR - The results do not match!
+2025-05-13 15:55:37,001 - INFO - Differences saved to Dq_analysis/Views/dbo.vw_RevenueByCategorydifferences.csv
+2025-05-13 15:55:37,001 - INFO - Number of differences detected in dbo.vw_RevenueByCategory, view: 16
+2025-05-13 15:55:37,001 - INFO - Executed Entity: MY_DB.MY_SCHEMA.VW_REVENUEBYCATEGORY | dbo.vw_RevenueByCategory | Different
+2025-05-13 15:55:37,001 - INFO - Number of Rows: 16 | 0 | Different
+2025-05-13 15:55:37,001 - INFO - Column Names: total_revenue, category_name | total_revenue, category_name | Same
+2025-05-13 15:55:37,001 - INFO - Data Types: total_revenue: float64, category_name: object | total_revenue: object, category_name: object | Different
+2025-05-13 15:55:37,001 - INFO - Data Comparison: 16 | 16 | Data mismatch detected
+2025-05-13 15:55:37,008 - INFO - HTML report generated: Dq_analysis/Views/View_comparison_report.html
+2025-05-13 15:55:37,428 - ERROR - The results do not match!
+2025-05-13 15:55:37,439 - INFO - Differences saved to Dq_analysis/Views/dbo.vw_StaffPerformancedifferences.csv
+2025-05-13 15:55:37,439 - INFO - Number of differences detected in dbo.vw_StaffPerformance, view: 1
+2025-05-13 15:55:37,439 - INFO - Executed Entity: MY_DB.MY_SCHEMA.VW_STAFFPERFORMANCE | dbo.vw_StaffPerformance | Different
+2025-05-13 15:55:37,440 - INFO - Number of Rows: 2 | 1 | Different
+2025-05-13 15:55:37,440 - INFO - Column Names: staff_name, total_rentals_handled, staff_id | staff_name, total_rentals_handled, staff_id | Same
+2025-05-13 15:55:37,440 - INFO - Data Types: staff_name: object, total_rentals_handled: int64, staff_id: object | staff_name: object, total_rentals_handled: int64, staff_id: object | Same
+2025-05-13 15:55:37,440 - INFO - Data Comparison: 1 | 1 | Data mismatch detected
+2025-05-13 15:55:37,450 - INFO - HTML report generated: Dq_analysis/Views/View_comparison_report.html
+2025-05-13 16:35:49,368 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:35:49,368 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:35:50,375 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:35:50,375 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:35:59,231 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:35:59,231 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:37:44,958 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:37:44,958 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:37:45,848 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:37:45,849 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:37:48,210 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:37:48,210 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:38:51,535 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:38:51,536 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:38:52,233 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:38:52,234 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:39:08,365 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:39:08,365 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:39:09,180 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:39:09,180 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:39:12,538 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:39:12,539 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:39:26,385 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:39:26,386 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:39:27,231 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:39:27,232 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:39:29,646 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:39:29,647 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:43:36,003 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:43:36,003 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:43:36,972 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:43:36,973 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:43:39,811 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:43:39,811 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:44:52,936 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:44:52,937 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:44:53,791 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:44:53,791 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:44:56,527 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:44:56,528 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:44:57,335 - ERROR - No common columns found for merging!
+2025-05-13 16:44:57,335 - INFO - Executed Entity: [SF Function: GetActorFullName] | [SQL Function: GetActorFullName] | Different
+2025-05-13 16:44:57,335 - INFO - Number of Rows: 1 | 1 | Same
+2025-05-13 16:44:57,335 - INFO - Column Names: my_db.my_schema.get_actor_full_name(5) | fullname | Different
+2025-05-13 16:44:57,335 - INFO - Data Comparison: N/A | N/A | No common columns to compare
+2025-05-13 16:44:57,566 - ERROR - No common columns found for merging!
+2025-05-13 16:44:57,566 - INFO - Executed Entity: [SF Function: GetTotalRentalByCustomer] | [SQL Function: GetTotalRentalByCustomer] | Different
+2025-05-13 16:44:57,566 - INFO - Number of Rows: 1 | 1 | Same
+2025-05-13 16:44:57,566 - INFO - Column Names: my_db.my_schema.get_total_rental_by_customer(3) | totalspent | Different
+2025-05-13 16:44:57,566 - INFO - Data Comparison: N/A | N/A | No common columns to compare
+2025-05-13 16:44:57,780 - ERROR - The results do not match!
+2025-05-13 16:44:57,792 - ERROR - Exception during comparison in [SQL Function: GetFilmsByCategory],function: Cannot save file into a non-existent directory: 'Dq_analysis\Functions'
+2025-05-13 16:44:57,792 - INFO - Executed Entity: [SF Function: GetFilmsByCategory] | [SQL Function: GetFilmsByCategory] | Different
+2025-05-13 16:44:57,792 - INFO - Number of Rows: 64 | 0 | Different
+2025-05-13 16:44:57,792 - INFO - Column Names: description, title, film_id | description, title, film_id | Same
+2025-05-13 16:44:57,792 - INFO - Data Types: description: object, title: object, film_id: object | description: object, title: object, film_id: object | Same
+2025-05-13 16:44:57,792 - INFO - Data Comparison: Error | Error | Error - Cannot save file into a non-existent directory: 'Dq_analysis\Functions'
+2025-05-13 16:44:58,039 - ERROR - No common columns found for merging!
+2025-05-13 16:44:58,039 - INFO - Executed Entity: [SF Function: IsFilmAvailableInStore] | [SQL Function: IsFilmAvailableInStore] | Different
+2025-05-13 16:44:58,039 - INFO - Number of Rows: 1 | 1 | Same
+2025-05-13 16:44:58,039 - INFO - Column Names: my_db.my_schema.is_film_available_in_store(10, 1) | isavailable | Different
+2025-05-13 16:44:58,039 - INFO - Data Comparison: N/A | N/A | No common columns to compare
+2025-05-13 16:44:58,258 - ERROR - The results do not match!
+2025-05-13 16:44:58,264 - ERROR - Exception during comparison in [SQL Function: GetTopCustomersByRentals],function: Cannot save file into a non-existent directory: 'Dq_analysis\Functions'
+2025-05-13 16:44:58,265 - INFO - Executed Entity: [SF Function: GetTopCustomersByRentals] | [SQL Function: GetTopCustomersByRentals] | Different
+2025-05-13 16:44:58,265 - INFO - Number of Rows: 5 | 5 | Same
+2025-05-13 16:44:58,265 - INFO - Column Names: rental_count, customer_id, last_name, first_name | rental_count, customer_id, last_name, first_name | Same
+2025-05-13 16:44:58,265 - INFO - Data Types: first_name: object, customer_id: object, last_name: object, rental_count: int64 | first_name: object, customer_id: int64, last_name: object, rental_count: int64 | Different
+2025-05-13 16:44:58,265 - INFO - Data Comparison: Error | Error | Error - Cannot save file into a non-existent directory: 'Dq_analysis\Functions'
+2025-05-13 16:45:14,648 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:45:14,649 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:45:15,625 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:45:15,625 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:45:20,404 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:45:20,404 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:45:21,078 - ERROR - No common columns found for merging!
+2025-05-13 16:45:21,078 - INFO - Executed Entity: [SF Function: GetActorFullName] | [SQL Function: GetActorFullName] | Different
+2025-05-13 16:45:21,078 - INFO - Number of Rows: 1 | 1 | Same
+2025-05-13 16:45:21,078 - INFO - Column Names: my_db.my_schema.get_actor_full_name(5) | fullname | Different
+2025-05-13 16:45:21,078 - INFO - Data Comparison: N/A | N/A | No common columns to compare
+2025-05-13 16:45:21,092 - INFO - HTML report generated: Dq_analysis/Functions/Function_comparison_report.html
+2025-05-13 16:45:21,305 - ERROR - No common columns found for merging!
+2025-05-13 16:45:21,305 - INFO - Executed Entity: [SF Function: GetTotalRentalByCustomer] | [SQL Function: GetTotalRentalByCustomer] | Different
+2025-05-13 16:45:21,306 - INFO - Number of Rows: 1 | 1 | Same
+2025-05-13 16:45:21,306 - INFO - Column Names: my_db.my_schema.get_total_rental_by_customer(3) | totalspent | Different
+2025-05-13 16:45:21,306 - INFO - Data Comparison: N/A | N/A | No common columns to compare
+2025-05-13 16:45:21,313 - INFO - HTML report generated: Dq_analysis/Functions/Function_comparison_report.html
+2025-05-13 16:45:21,530 - ERROR - The results do not match!
+2025-05-13 16:45:21,544 - INFO - Differences saved to Dq_analysis/Functions/[SQL Function: GetFilmsByCategory]differences.csv
+2025-05-13 16:45:21,544 - INFO - Number of differences detected in [SQL Function: GetFilmsByCategory], function: 64
+2025-05-13 16:45:21,544 - INFO - Executed Entity: [SF Function: GetFilmsByCategory] | [SQL Function: GetFilmsByCategory] | Different
+2025-05-13 16:45:21,544 - INFO - Number of Rows: 64 | 0 | Different
+2025-05-13 16:45:21,544 - INFO - Column Names: title, film_id, description | title, film_id, description | Same
+2025-05-13 16:45:21,544 - INFO - Data Types: title: object, description: object, film_id: object | title: object, description: object, film_id: object | Same
+2025-05-13 16:45:21,544 - INFO - Data Comparison: 64 | 64 | Data mismatch detected
+2025-05-13 16:45:21,548 - INFO - HTML report generated: Dq_analysis/Functions/Function_comparison_report.html
+2025-05-13 16:45:22,278 - ERROR - No common columns found for merging!
+2025-05-13 16:45:22,279 - INFO - Executed Entity: [SF Function: IsFilmAvailableInStore] | [SQL Function: IsFilmAvailableInStore] | Different
+2025-05-13 16:45:22,279 - INFO - Number of Rows: 1 | 1 | Same
+2025-05-13 16:45:22,279 - INFO - Column Names: my_db.my_schema.is_film_available_in_store(10, 1) | isavailable | Different
+2025-05-13 16:45:22,279 - INFO - Data Comparison: N/A | N/A | No common columns to compare
+2025-05-13 16:45:22,288 - INFO - HTML report generated: Dq_analysis/Functions/Function_comparison_report.html
+2025-05-13 16:45:22,928 - ERROR - The results do not match!
+2025-05-13 16:45:22,944 - INFO - Differences saved to Dq_analysis/Functions/[SQL Function: GetTopCustomersByRentals]differences.csv
+2025-05-13 16:45:22,945 - INFO - Number of differences detected in [SQL Function: GetTopCustomersByRentals], function: 0
+2025-05-13 16:45:22,945 - INFO - Executed Entity: [SF Function: GetTopCustomersByRentals] | [SQL Function: GetTopCustomersByRentals] | Different
+2025-05-13 16:45:22,945 - INFO - Number of Rows: 5 | 5 | Same
+2025-05-13 16:45:22,945 - INFO - Column Names: last_name, first_name, rental_count, customer_id | last_name, first_name, rental_count, customer_id | Same
+2025-05-13 16:45:22,945 - INFO - Data Types: last_name: object, rental_count: int64, customer_id: object, first_name: object | last_name: object, rental_count: int64, customer_id: int64, first_name: object | Different
+2025-05-13 16:45:22,945 - INFO - Data Comparison: 0 | 0 | Data mismatch detected
+2025-05-13 16:45:22,954 - INFO - HTML report generated: Dq_analysis/Functions/Function_comparison_report.html
+2025-05-13 16:45:45,593 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:45:45,593 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:45:46,591 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:45:46,592 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:45:49,223 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:45:49,223 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:45:49,894 - ERROR - No common columns found for merging!
+2025-05-13 16:45:49,894 - INFO - Executed Entity: [SF Function: GetActorFullName] | [SQL Function: GetActorFullName] | Different
+2025-05-13 16:45:49,894 - INFO - Number of Rows: 1 | 1 | Same
+2025-05-13 16:45:49,894 - INFO - Column Names: my_db.my_schema.get_actor_full_name(5) | fullname | Different
+2025-05-13 16:45:49,894 - INFO - Data Comparison: N/A | N/A | No common columns to compare
+2025-05-13 16:45:49,899 - INFO - HTML report generated: Dq_analysis/Functions/Function_comparison_report.html
+2025-05-13 16:45:50,106 - ERROR - No common columns found for merging!
+2025-05-13 16:45:50,106 - INFO - Executed Entity: [SF Function: GetTotalRentalByCustomer] | [SQL Function: GetTotalRentalByCustomer] | Different
+2025-05-13 16:45:50,106 - INFO - Number of Rows: 1 | 1 | Same
+2025-05-13 16:45:50,106 - INFO - Column Names: my_db.my_schema.get_total_rental_by_customer(3) | totalspent | Different
+2025-05-13 16:45:50,106 - INFO - Data Comparison: N/A | N/A | No common columns to compare
+2025-05-13 16:45:50,114 - INFO - HTML report generated: Dq_analysis/Functions/Function_comparison_report.html
+2025-05-13 16:45:50,320 - ERROR - The results do not match!
+2025-05-13 16:45:50,330 - INFO - Differences saved to Dq_analysis/Functions/[SQL Function: GetFilmsByCategory]differences.csv
+2025-05-13 16:45:50,330 - INFO - Number of differences detected in [SQL Function: GetFilmsByCategory], function: 64
+2025-05-13 16:45:50,330 - INFO - Executed Entity: [SF Function: GetFilmsByCategory] | [SQL Function: GetFilmsByCategory] | Different
+2025-05-13 16:45:50,330 - INFO - Number of Rows: 64 | 0 | Different
+2025-05-13 16:45:50,330 - INFO - Column Names: title, description, film_id | title, description, film_id | Same
+2025-05-13 16:45:50,330 - INFO - Data Types: title: object, description: object, film_id: object | title: object, description: object, film_id: object | Same
+2025-05-13 16:45:50,330 - INFO - Data Comparison: 64 | 64 | Data mismatch detected
+2025-05-13 16:45:50,334 - INFO - HTML report generated: Dq_analysis/Functions/Function_comparison_report.html
+2025-05-13 16:45:50,604 - ERROR - No common columns found for merging!
+2025-05-13 16:45:50,604 - INFO - Executed Entity: [SF Function: IsFilmAvailableInStore] | [SQL Function: IsFilmAvailableInStore] | Different
+2025-05-13 16:45:50,604 - INFO - Number of Rows: 1 | 1 | Same
+2025-05-13 16:45:50,604 - INFO - Column Names: my_db.my_schema.is_film_available_in_store(10, 1) | isavailable | Different
+2025-05-13 16:45:50,614 - INFO - Data Comparison: N/A | N/A | No common columns to compare
+2025-05-13 16:45:50,623 - INFO - HTML report generated: Dq_analysis/Functions/Function_comparison_report.html
+2025-05-13 16:45:50,822 - ERROR - The results do not match!
+2025-05-13 16:45:50,827 - INFO - Differences saved to Dq_analysis/Functions/[SQL Function: GetTopCustomersByRentals]differences.csv
+2025-05-13 16:45:50,827 - INFO - Number of differences detected in [SQL Function: GetTopCustomersByRentals], function: 0
+2025-05-13 16:45:50,827 - INFO - Executed Entity: [SF Function: GetTopCustomersByRentals] | [SQL Function: GetTopCustomersByRentals] | Different
+2025-05-13 16:45:50,827 - INFO - Number of Rows: 5 | 5 | Same
+2025-05-13 16:45:50,827 - INFO - Column Names: customer_id, last_name, rental_count, first_name | customer_id, last_name, rental_count, first_name | Same
+2025-05-13 16:45:50,827 - INFO - Data Types: customer_id: object, last_name: object, rental_count: int64, first_name: object | customer_id: int64, last_name: object, rental_count: int64, first_name: object | Different
+2025-05-13 16:45:50,827 - INFO - Data Comparison: 0 | 0 | Data mismatch detected
+2025-05-13 16:45:50,827 - INFO - HTML report generated: Dq_analysis/Functions/Function_comparison_report.html
+2025-05-13 16:46:12,626 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:46:12,626 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:46:13,475 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:46:13,475 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:46:15,640 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:46:15,640 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:46:16,295 - ERROR - No common columns found for merging!
+2025-05-13 16:46:16,295 - INFO - Executed Entity: [SF Function: GetActorFullName] | [SQL Function: GetActorFullName] | Different
+2025-05-13 16:46:16,295 - INFO - Number of Rows: 1 | 1 | Same
+2025-05-13 16:46:16,295 - INFO - Column Names: my_db.my_schema.get_actor_full_name(5) | fullname | Different
+2025-05-13 16:46:16,295 - INFO - Data Comparison: N/A | N/A | No common columns to compare
+2025-05-13 16:46:16,300 - INFO - HTML report generated: Dq_analysis/Functions/Function_comparison_report.html
+2025-05-13 16:46:16,513 - ERROR - No common columns found for merging!
+2025-05-13 16:46:16,513 - INFO - Executed Entity: [SF Function: GetTotalRentalByCustomer] | [SQL Function: GetTotalRentalByCustomer] | Different
+2025-05-13 16:46:16,513 - INFO - Number of Rows: 1 | 1 | Same
+2025-05-13 16:46:16,513 - INFO - Column Names: my_db.my_schema.get_total_rental_by_customer(3) | totalspent | Different
+2025-05-13 16:46:16,513 - INFO - Data Comparison: N/A | N/A | No common columns to compare
+2025-05-13 16:46:16,517 - INFO - HTML report generated: Dq_analysis/Functions/Function_comparison_report.html
+2025-05-13 16:46:16,705 - ERROR - The results do not match!
+2025-05-13 16:46:16,713 - INFO - Differences saved to Dq_analysis/Functions/[SQL Function: GetFilmsByCategory]differences.csv
+2025-05-13 16:46:16,713 - INFO - Number of differences detected in [SQL Function: GetFilmsByCategory], function: 64
+2025-05-13 16:46:16,713 - INFO - Executed Entity: [SF Function: GetFilmsByCategory] | [SQL Function: GetFilmsByCategory] | Different
+2025-05-13 16:46:16,713 - INFO - Number of Rows: 64 | 0 | Different
+2025-05-13 16:46:16,713 - INFO - Column Names: title, film_id, description | title, film_id, description | Same
+2025-05-13 16:46:16,713 - INFO - Data Types: title: object, film_id: object, description: object | title: object, film_id: object, description: object | Same
+2025-05-13 16:46:16,713 - INFO - Data Comparison: 64 | 64 | Data mismatch detected
+2025-05-13 16:46:16,715 - INFO - HTML report generated: Dq_analysis/Functions/Function_comparison_report.html
+2025-05-13 16:46:16,948 - ERROR - No common columns found for merging!
+2025-05-13 16:46:16,948 - INFO - Executed Entity: [SF Function: IsFilmAvailableInStore] | [SQL Function: IsFilmAvailableInStore] | Different
+2025-05-13 16:46:16,948 - INFO - Number of Rows: 1 | 1 | Same
+2025-05-13 16:46:16,948 - INFO - Column Names: my_db.my_schema.is_film_available_in_store(10, 1) | isavailable | Different
+2025-05-13 16:46:16,948 - INFO - Data Comparison: N/A | N/A | No common columns to compare
+2025-05-13 16:46:16,952 - INFO - HTML report generated: Dq_analysis/Functions/Function_comparison_report.html
+2025-05-13 16:46:17,149 - ERROR - The results do not match!
+2025-05-13 16:46:17,156 - INFO - Differences saved to Dq_analysis/Functions/[SQL Function: GetTopCustomersByRentals]differences.csv
+2025-05-13 16:46:17,156 - INFO - Number of differences detected in [SQL Function: GetTopCustomersByRentals], function: 0
+2025-05-13 16:46:17,156 - INFO - Executed Entity: [SF Function: GetTopCustomersByRentals] | [SQL Function: GetTopCustomersByRentals] | Different
+2025-05-13 16:46:17,156 - INFO - Number of Rows: 5 | 5 | Same
+2025-05-13 16:46:17,156 - INFO - Column Names: first_name, last_name, customer_id, rental_count | first_name, last_name, customer_id, rental_count | Same
+2025-05-13 16:46:17,156 - INFO - Data Types: first_name: object, last_name: object, customer_id: object, rental_count: int64 | first_name: object, last_name: object, customer_id: int64, rental_count: int64 | Different
+2025-05-13 16:46:17,156 - INFO - Data Comparison: 0 | 0 | Data mismatch detected
+2025-05-13 16:46:17,161 - INFO - HTML report generated: Dq_analysis/Functions/Function_comparison_report.html
+2025-05-13 16:47:26,611 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:47:26,612 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:47:27,418 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:47:27,418 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:47:30,188 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 16:47:30,189 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 16:47:30,738 - ERROR - No common columns found for merging!
+2025-05-13 16:47:30,738 - INFO - Executed Entity: GetActorFullName | GetActorFullName | Same
+2025-05-13 16:47:30,738 - INFO - Number of Rows: 1 | 1 | Same
+2025-05-13 16:47:30,738 - INFO - Column Names: my_db.my_schema.get_actor_full_name(5) | fullname | Different
+2025-05-13 16:47:30,738 - INFO - Data Comparison: N/A | N/A | No common columns to compare
+2025-05-13 16:47:30,742 - INFO - HTML report generated: Dq_analysis/Functions/Function_comparison_report.html
+2025-05-13 16:47:30,944 - ERROR - No common columns found for merging!
+2025-05-13 16:47:30,944 - INFO - Executed Entity: GetTotalRentalByCustomer | GetTotalRentalByCustomer | Same
+2025-05-13 16:47:30,944 - INFO - Number of Rows: 1 | 1 | Same
+2025-05-13 16:47:30,944 - INFO - Column Names: my_db.my_schema.get_total_rental_by_customer(3) | totalspent | Different
+2025-05-13 16:47:30,945 - INFO - Data Comparison: N/A | N/A | No common columns to compare
+2025-05-13 16:47:30,950 - INFO - HTML report generated: Dq_analysis/Functions/Function_comparison_report.html
+2025-05-13 16:47:31,681 - ERROR - The results do not match!
+2025-05-13 16:47:31,692 - INFO - Differences saved to Dq_analysis/Functions/GetFilmsByCategorydifferences.csv
+2025-05-13 16:47:31,693 - INFO - Number of differences detected in GetFilmsByCategory, function: 64
+2025-05-13 16:47:31,693 - INFO - Executed Entity: GetFilmsByCategory | GetFilmsByCategory | Same
+2025-05-13 16:47:31,693 - INFO - Number of Rows: 64 | 0 | Different
+2025-05-13 16:47:31,693 - INFO - Column Names: description, title, film_id | description, title, film_id | Same
+2025-05-13 16:47:31,693 - INFO - Data Types: description: object, title: object, film_id: object | description: object, title: object, film_id: object | Same
+2025-05-13 16:47:31,693 - INFO - Data Comparison: 64 | 64 | Data mismatch detected
+2025-05-13 16:47:31,698 - INFO - HTML report generated: Dq_analysis/Functions/Function_comparison_report.html
+2025-05-13 16:47:31,924 - ERROR - No common columns found for merging!
+2025-05-13 16:47:31,924 - INFO - Executed Entity: IsFilmAvailableInStore | IsFilmAvailableInStore | Same
+2025-05-13 16:47:31,924 - INFO - Number of Rows: 1 | 1 | Same
+2025-05-13 16:47:31,924 - INFO - Column Names: my_db.my_schema.is_film_available_in_store(10, 1) | isavailable | Different
+2025-05-13 16:47:31,924 - INFO - Data Comparison: N/A | N/A | No common columns to compare
+2025-05-13 16:47:31,931 - INFO - HTML report generated: Dq_analysis/Functions/Function_comparison_report.html
+2025-05-13 16:47:32,132 - ERROR - The results do not match!
+2025-05-13 16:47:32,142 - INFO - Differences saved to Dq_analysis/Functions/GetTopCustomersByRentalsdifferences.csv
+2025-05-13 16:47:32,142 - INFO - Number of differences detected in GetTopCustomersByRentals, function: 0
+2025-05-13 16:47:32,142 - INFO - Executed Entity: GetTopCustomersByRentals | GetTopCustomersByRentals | Same
+2025-05-13 16:47:32,142 - INFO - Number of Rows: 5 | 5 | Same
+2025-05-13 16:47:32,142 - INFO - Column Names: last_name, first_name, rental_count, customer_id | last_name, first_name, rental_count, customer_id | Same
+2025-05-13 16:47:32,142 - INFO - Data Types: customer_id: object, first_name: object, rental_count: int64, last_name: object | customer_id: int64, first_name: object, rental_count: int64, last_name: object | Different
+2025-05-13 16:47:32,142 - INFO - Data Comparison: 0 | 0 | Data mismatch detected
+2025-05-13 16:47:32,148 - INFO - HTML report generated: Dq_analysis/Functions/Function_comparison_report.html
+2025-05-13 17:00:42,428 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 17:00:42,428 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 17:00:43,472 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 17:00:43,472 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 17:01:06,590 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 17:01:06,590 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 17:02:55,945 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 17:02:55,946 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 17:02:56,975 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 17:02:56,975 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 17:02:58,934 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 17:02:58,934 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 17:02:59,990 - ERROR - The results do not match!
+2025-05-13 17:02:59,999 - INFO - Differences saved to Dq_analysis/Procedures/GetCustomerRentalsdifferences.csv
+2025-05-13 17:02:59,999 - INFO - Number of differences detected in GetCustomerRentals, procedure: 38
+2025-05-13 17:02:59,999 - INFO - Executed Entity: GetCustomerRentals | GetCustomerRentals | Same
+2025-05-13 17:02:59,999 - INFO - Number of Rows: 38 | 0 | Different
+2025-05-13 17:03:00,000 - INFO - Column Names: rental_id, film_title, return_date, rental_date | rental_id, film_title, return_date, rental_date | Same
+2025-05-13 17:03:00,000 - INFO - Data Types: rental_id: object, film_title: object, return_date: object, rental_date: object | rental_id: object, film_title: object, return_date: object, rental_date: object | Same
+2025-05-13 17:03:00,000 - INFO - Data Comparison: 38 | 38 | Data mismatch detected
+2025-05-13 17:03:00,004 - INFO - HTML report generated: Dq_analysis/Procedures/Procedure_comparison_report.html
+2025-05-13 17:03:01,605 - ERROR - The results do not match!
+2025-05-13 17:03:01,616 - INFO - Differences saved to Dq_analysis/Procedures/GetInactiveCustomersdifferences.csv
+2025-05-13 17:03:01,617 - INFO - Number of differences detected in GetInactiveCustomers, procedure: 33
+2025-05-13 17:03:01,617 - INFO - Executed Entity: GetInactiveCustomers | GetInactiveCustomers | Same
+2025-05-13 17:03:01,617 - INFO - Number of Rows: 632 | 599 | Different
+2025-05-13 17:03:01,617 - INFO - Column Names: last_name, first_name, customer_id, last_rental_date | last_name, first_name, customer_id, last_rental_date | Same
+2025-05-13 17:03:01,617 - INFO - Data Types: last_name: object, first_name: object, customer_id: object, last_rental_date: object | last_name: object, first_name: object, customer_id: int64, last_rental_date: datetime64[ns] | Different
+2025-05-13 17:03:01,617 - INFO - Data Comparison: 33 | 33 | Data mismatch detected
+2025-05-13 17:03:01,620 - INFO - HTML report generated: Dq_analysis/Procedures/Procedure_comparison_report.html
+2025-05-13 17:03:02,368 - ERROR - The results do not match!
+2025-05-13 17:03:02,373 - INFO - Differences saved to Dq_analysis/Procedures/GetStoreRevenuedifferences.csv
+2025-05-13 17:03:02,373 - INFO - Number of differences detected in GetStoreRevenue, procedure: 1
+2025-05-13 17:03:02,373 - INFO - Executed Entity: GetStoreRevenue | GetStoreRevenue | Same
+2025-05-13 17:03:02,374 - INFO - Number of Rows: 1 | 0 | Different
+2025-05-13 17:03:02,374 - INFO - Column Names: total_revenue, store_id | total_revenue, store_id | Same
+2025-05-13 17:03:02,374 - INFO - Data Types: total_revenue: float64, store_id: object | total_revenue: object, store_id: object | Different
+2025-05-13 17:03:02,374 - INFO - Data Comparison: 1 | 1 | Data mismatch detected
+2025-05-13 17:03:02,376 - INFO - HTML report generated: Dq_analysis/Procedures/Procedure_comparison_report.html
+2025-05-13 17:03:02,711 - ERROR - The results do not match!
+2025-05-13 17:03:02,716 - INFO - Differences saved to Dq_analysis/Procedures/GetTopRentedMoviesdifferences.csv
+2025-05-13 17:03:02,716 - INFO - Number of differences detected in GetTopRentedMovies, procedure: 10
+2025-05-13 17:03:02,716 - INFO - Executed Entity: GetTopRentedMovies | GetTopRentedMovies | Same
+2025-05-13 17:03:02,717 - INFO - Number of Rows: 10 | 0 | Different
+2025-05-13 17:03:02,717 - INFO - Column Names: title, total_rentals, film_id | title, total_rentals, film_id | Same
+2025-05-13 17:03:02,717 - INFO - Data Types: title: object, total_rentals: int64, film_id: object | title: object, total_rentals: object, film_id: object | Different
+2025-05-13 17:03:02,717 - INFO - Data Comparison: 10 | 10 | Data mismatch detected
+2025-05-13 17:03:02,721 - INFO - HTML report generated: Dq_analysis/Procedures/Procedure_comparison_report.html
+2025-05-13 17:17:00,355 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 17:17:00,355 - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-13 17:17:01,633 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-05-13 17:17:01,633 - INFO - Connecting to GLOBAL Snowflake domain

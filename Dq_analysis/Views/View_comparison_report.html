@@ -1,0 +1,218 @@
+
+        <html>
+        <head>
+            <title>Comparison Report</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 20px;
+                }
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin-bottom: 20px;
+                }
+                th, td {
+                    border: 1px solid black;
+                    padding: 8px;
+                    text-align: left;
+                }
+                th {
+                    background-color: #4CAF50;
+                    color: white;
+                }
+                .mismatch {
+                    background-color: #ffcccc;
+                }
+                .entity-header {
+                    font-size: 18px;
+                    font-weight: bold;
+                    background-color: #ddd;
+                    padding: 10px;
+                    margin-top: 20px;
+                    border: 1px solid black;
+                    text-align: center;
+                }
+            </style>
+        </head>
+        <body>
+            <h2>Comparison Report</h2>
+        <div class="entity-header">dbo.vw_OverdueCustomers</div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Attribute</th>
+      <th>Snowflake Output</th>
+      <th>SQL Server Output</th>
+      <th>Comparison</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of Rows</td>
+      <td>159</td>
+      <td>159</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Column Names</td>
+      <td>rental_date, full_name, customer_id, return_date</td>
+      <td>rental_date, full_name, customer_id, return_date</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Data Types</td>
+      <td>rental_date: object, full_name: object, customer_id: object, return_date: object</td>
+      <td>rental_date: datetime64[ns], full_name: object, customer_id: int64, return_date: object</td>
+      <td>Different</td>
+    </tr>
+    <tr>
+      <td>Data Comparison</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Data mismatch detected</td>
+    </tr>
+  </tbody>
+</table><div class="entity-header">dbo.vw_TopRentingCustomers</div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Attribute</th>
+      <th>Snowflake Output</th>
+      <th>SQL Server Output</th>
+      <th>Comparison</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of Rows</td>
+      <td>599</td>
+      <td>599</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Column Names</td>
+      <td>full_name, customer_id, total_rentals</td>
+      <td>full_name, customer_id, total_rentals</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Data Types</td>
+      <td>full_name: object, customer_id: object, total_rentals: int64</td>
+      <td>full_name: object, customer_id: int64, total_rentals: int64</td>
+      <td>Different</td>
+    </tr>
+    <tr>
+      <td>Data Comparison</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Data mismatch detected</td>
+    </tr>
+  </tbody>
+</table><div class="entity-header">dbo.vw_FilmAvailability</div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Attribute</th>
+      <th>Snowflake Output</th>
+      <th>SQL Server Output</th>
+      <th>Comparison</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of Rows</td>
+      <td>958</td>
+      <td>0</td>
+      <td>Different</td>
+    </tr>
+    <tr>
+      <td>Column Names</td>
+      <td>copies_available, title, film_id</td>
+      <td>copies_available, title, film_id</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Data Types</td>
+      <td>copies_available: int64, title: object, film_id: object</td>
+      <td>copies_available: object, title: object, film_id: object</td>
+      <td>Different</td>
+    </tr>
+    <tr>
+      <td>Data Comparison</td>
+      <td>958</td>
+      <td>958</td>
+      <td>Data mismatch detected</td>
+    </tr>
+  </tbody>
+</table><div class="entity-header">dbo.vw_RevenueByCategory</div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Attribute</th>
+      <th>Snowflake Output</th>
+      <th>SQL Server Output</th>
+      <th>Comparison</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of Rows</td>
+      <td>16</td>
+      <td>0</td>
+      <td>Different</td>
+    </tr>
+    <tr>
+      <td>Column Names</td>
+      <td>total_revenue, category_name</td>
+      <td>total_revenue, category_name</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Data Types</td>
+      <td>total_revenue: float64, category_name: object</td>
+      <td>total_revenue: object, category_name: object</td>
+      <td>Different</td>
+    </tr>
+    <tr>
+      <td>Data Comparison</td>
+      <td>16</td>
+      <td>16</td>
+      <td>Data mismatch detected</td>
+    </tr>
+  </tbody>
+</table><div class="entity-header">dbo.vw_StaffPerformance</div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Attribute</th>
+      <th>Snowflake Output</th>
+      <th>SQL Server Output</th>
+      <th>Comparison</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of Rows</td>
+      <td>2</td>
+      <td>1</td>
+      <td>Different</td>
+    </tr>
+    <tr>
+      <td>Column Names</td>
+      <td>staff_name, total_rentals_handled, staff_id</td>
+      <td>staff_name, total_rentals_handled, staff_id</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Data Types</td>
+      <td>staff_name: object, total_rentals_handled: int64, staff_id: object</td>
+      <td>staff_name: object, total_rentals_handled: int64, staff_id: object</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Data Comparison</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Data mismatch detected</td>
+    </tr>
+  </tbody>
+</table>
+        </body>
+        </html>
+        

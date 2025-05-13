@@ -1,0 +1,200 @@
+
+        <html>
+        <head>
+            <title>Comparison Report</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 20px;
+                }
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin-bottom: 20px;
+                }
+                th, td {
+                    border: 1px solid black;
+                    padding: 8px;
+                    text-align: left;
+                }
+                th {
+                    background-color: #4CAF50;
+                    color: white;
+                }
+                .mismatch {
+                    background-color: #ffcccc;
+                }
+                .entity-header {
+                    font-size: 18px;
+                    font-weight: bold;
+                    background-color: #ddd;
+                    padding: 10px;
+                    margin-top: 20px;
+                    border: 1px solid black;
+                    text-align: center;
+                }
+            </style>
+        </head>
+        <body>
+            <h2>Comparison Report</h2>
+        <div class="entity-header">GetActorFullName</div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Attribute</th>
+      <th>Snowflake Output</th>
+      <th>SQL Server Output</th>
+      <th>Comparison</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of Rows</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Column Names</td>
+      <td>my_db.my_schema.get_actor_full_name(5)</td>
+      <td>fullname</td>
+      <td>Different</td>
+    </tr>
+    <tr>
+      <td>Data Comparison</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>No common columns to compare</td>
+    </tr>
+  </tbody>
+</table><div class="entity-header">GetTotalRentalByCustomer</div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Attribute</th>
+      <th>Snowflake Output</th>
+      <th>SQL Server Output</th>
+      <th>Comparison</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of Rows</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Column Names</td>
+      <td>my_db.my_schema.get_total_rental_by_customer(3)</td>
+      <td>totalspent</td>
+      <td>Different</td>
+    </tr>
+    <tr>
+      <td>Data Comparison</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>No common columns to compare</td>
+    </tr>
+  </tbody>
+</table><div class="entity-header">GetFilmsByCategory</div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Attribute</th>
+      <th>Snowflake Output</th>
+      <th>SQL Server Output</th>
+      <th>Comparison</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of Rows</td>
+      <td>64</td>
+      <td>0</td>
+      <td>Different</td>
+    </tr>
+    <tr>
+      <td>Column Names</td>
+      <td>description, title, film_id</td>
+      <td>description, title, film_id</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Data Types</td>
+      <td>description: object, title: object, film_id: object</td>
+      <td>description: object, title: object, film_id: object</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Data Comparison</td>
+      <td>64</td>
+      <td>64</td>
+      <td>Data mismatch detected</td>
+    </tr>
+  </tbody>
+</table><div class="entity-header">IsFilmAvailableInStore</div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Attribute</th>
+      <th>Snowflake Output</th>
+      <th>SQL Server Output</th>
+      <th>Comparison</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of Rows</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Column Names</td>
+      <td>my_db.my_schema.is_film_available_in_store(10, 1)</td>
+      <td>isavailable</td>
+      <td>Different</td>
+    </tr>
+    <tr>
+      <td>Data Comparison</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>No common columns to compare</td>
+    </tr>
+  </tbody>
+</table><div class="entity-header">GetTopCustomersByRentals</div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Attribute</th>
+      <th>Snowflake Output</th>
+      <th>SQL Server Output</th>
+      <th>Comparison</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of Rows</td>
+      <td>5</td>
+      <td>5</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Column Names</td>
+      <td>last_name, first_name, rental_count, customer_id</td>
+      <td>last_name, first_name, rental_count, customer_id</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Data Types</td>
+      <td>customer_id: object, first_name: object, rental_count: int64, last_name: object</td>
+      <td>customer_id: int64, first_name: object, rental_count: int64, last_name: object</td>
+      <td>Different</td>
+    </tr>
+    <tr>
+      <td>Data Comparison</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Data mismatch detected</td>
+    </tr>
+  </tbody>
+</table>
+        </body>
+        </html>
+        
