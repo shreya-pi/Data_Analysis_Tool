@@ -60,8 +60,8 @@ Differences are captured in CSV files and summarized in interactive HTML reports
 1. **Clone the repository**
 
    ```bash
-   git clone https://your.git.repo/url.git
-   cd your-repo-directory
+   git clone https://github.com/shreya-pi/Data_Analysis_Tool.git
+   cd Data_Analysis_Tool
    ```
 
 2. **Create and activate a Python virtual environment**
